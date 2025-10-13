@@ -1,0 +1,20 @@
+# core
+torch
+transformers
+sentence-transformers
+
+# NLP + utilities
+nltk
+fuzzywuzzy
+python-Levenshtein
+phonetics
+pyspellchecker
+scikit-learn
+numpy
+
+# optional fast vector search (recommended for large FAQ)
+faiss-cpu
+
+# web/cli
+flask
+flask-cors
