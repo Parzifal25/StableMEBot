@@ -742,10 +742,7 @@
   {"question": "What are postpartum recovery essentials?", "answer": "Comfortable clothing, maternity pads, sitz bath kit, water bottle, and healthy snacks ease the first weeks."},
   {"question": "How can I stay positive during postpartum recovery?", "answer": "Celebrate progress, practice gratitude, and remember healing takes time."},
   {"question": "Can postpartum women lift weights?", "answer": "Light weights are fine after 8 weeks if cleared by your doctor. Focus on form and breathing."},
-  {
-    "question": "Why do women experience mood swings during their cycle?",
-    "answer": "Hormonal fluctuations in estrogen and progesterone can affect neurotransmitters like serotonin, leading to mood swings during the menstrual cycle."
-  },
+  {"question": "Why do women experience mood swings during their cycle?","answer": "Hormonal fluctuations in estrogen and progesterone can affect neurotransmitters like serotonin, leading to mood swings during the menstrual cycle."},
   {
     "question": "How can stress impact a woman's hormonal balance?",
     "answer": "Chronic stress increases cortisol levels, which can suppress reproductive hormones, disturb ovulation, and cause irregular cycles."
@@ -3626,5 +3623,1689 @@
   {
     "question": "How to prevent postpartum acne?",
     "answer": "Maintain hygiene, avoid harsh products, eat balanced diet, and hydrate well."
+  },
+  {
+    "question": "How does estrogen influence mood during the menstrual cycle?",
+    "answer": "Estrogen affects serotonin and dopamine levels in the brain, which can enhance mood and emotional stability during certain phases of the cycle."
+  },
+  {
+    "question": "Why do I feel more irritable before my period?",
+    "answer": "Rising progesterone and dropping estrogen before menstruation can lower serotonin, increasing irritability and emotional sensitivity."
+  },
+  {
+    "question": "Can stress worsen PMS symptoms?",
+    "answer": "Yes, high cortisol from stress can intensify PMS symptoms such as mood swings, fatigue, and bloating."
+  },
+  {
+    "question": "How does progesterone affect sleep?",
+    "answer": "Progesterone has a calming effect and promotes deeper sleep, but fluctuations can cause insomnia or restless nights."
+  },
+  {
+    "question": "Why do I experience anxiety during ovulation?",
+    "answer": "The estrogen peak during ovulation can heighten emotional sensitivity, sometimes causing temporary anxiety or mood changes."
+  },
+  {
+    "question": "How can mindfulness help with hormonal mood changes?",
+    "answer": "Mindfulness practices reduce stress hormones, improve emotional regulation, and help the brain respond calmly to hormonal shifts."
+  },
+  {
+    "question": "Can poor nutrition impact hormonal balance?",
+    "answer": "Diets low in essential fatty acids, vitamins, and minerals can disrupt hormone production and worsen mood and energy levels."
+  },
+  {
+    "question": "How does sleep deprivation affect hormones?",
+    "answer": "Lack of sleep raises cortisol and disrupts estrogen and progesterone, causing fatigue, irritability, and mood instability."
+  },
+  {
+    "question": "Why do I feel overwhelmed easily during my cycle?",
+    "answer": "Hormonal fluctuations, particularly in estrogen and progesterone, can make stress responses stronger, increasing feelings of overwhelm."
+  },
+  {
+    "question": "Can regular exercise help hormonal health?",
+    "answer": "Yes, moderate exercise balances cortisol, improves insulin sensitivity, and supports reproductive hormone regulation."
+  },
+  {
+    "question": "Why do I feel emotional after stressful events?",
+    "answer": "Stress floods the body with cortisol and adrenaline, which can disrupt neurotransmitter balance and heighten emotional reactions."
+  },
+  {
+    "question": "Can journaling improve emotional resilience?",
+    "answer": "Writing thoughts helps process emotions, reduces rumination, and strengthens coping strategies for stress and hormonal changes."
+  },
+  {
+    "question": "How does hydration affect mood?",
+    "answer": "Dehydration can lower energy, impair cognition, and amplify irritability due to changes in brain chemistry and hormone balance."
+  },
+  {
+    "question": "Why do I crave sweets before my period?",
+    "answer": "Progesterone increases appetite and cravings for carbs, which temporarily boost serotonin and improve mood."
+  },
+  {
+    "question": "Can yoga support hormone regulation?",
+    "answer": "Yoga reduces stress hormones, improves circulation, and promotes balance in reproductive and adrenal hormone systems."
+  },
+  {
+    "question": "Why do I feel fatigued despite adequate sleep?",
+    "answer": "Hormonal imbalances, stress, and poor sleep quality can prevent restorative sleep, causing daytime fatigue."
+  },
+  {
+    "question": "Can omega-3 fatty acids improve mood?",
+    "answer": "Omega-3s support neurotransmitter function, reduce inflammation, and help stabilize mood during hormonal fluctuations."
+  },
+  {
+    "question": "Why do I feel more anxious at night?",
+    "answer": "Cortisol levels dip at night, but racing thoughts and hormonal sensitivities can make anxiety feel stronger."
+  },
+  {
+    "question": "How does insulin affect emotional health?",
+    "answer": "Blood sugar spikes and drops can trigger mood swings, irritability, and stress responses in sensitive individuals."
+  },
+  {
+    "question": "Can meditation reduce PMS symptoms?",
+    "answer": "Meditation lowers cortisol and promotes calmness, helping relieve emotional PMS symptoms like anxiety and irritability."
+  },
+  {
+    "question": "Why do I feel bloated during my cycle?",
+    "answer": "Hormonal shifts affect fluid retention and digestion, causing temporary bloating and discomfort."
+  },
+  {
+    "question": "Can vitamin D affect mood?",
+    "answer": "Vitamin D supports serotonin production; low levels can increase risk of depression and mood swings."
+  },
+  {
+    "question": "Why do I feel more sensitive to criticism before my period?",
+    "answer": "Hormonal fluctuations can heighten emotional reactivity, making perceived criticism feel more intense."
+  },
+  {
+    "question": "How does cortisol affect emotional balance?",
+    "answer": "Chronic cortisol elevation impairs neurotransmitter function, increasing anxiety, irritability, and emotional fatigue."
+  },
+  {
+    "question": "Can iron deficiency worsen fatigue and mood?",
+    "answer": "Low iron reduces oxygen delivery to the brain, causing fatigue, low energy, and sometimes mood disturbances."
+  },
+  {
+    "question": "Why do I experience mood swings after stress?",
+    "answer": "Stress disrupts neurotransmitters and hormonal balance, making emotions fluctuate more than usual."
+  },
+  {
+    "question": "How does magnesium support hormonal health?",
+    "answer": "Magnesium helps regulate cortisol, supports sleep, and eases PMS symptoms by balancing hormone-related pathways."
+  },
+  {
+    "question": "Why do I feel restless before my period?",
+    "answer": "Changes in progesterone and serotonin can cause heightened restlessness and difficulty relaxing."
+  },
+  {
+    "question": "Can probiotics affect emotional well-being?",
+    "answer": "Gut bacteria influence neurotransmitter production; balanced gut flora can improve mood and reduce anxiety."
+  },
+  {
+    "question": "How does chronic stress impact ovulation?",
+    "answer": "High cortisol can suppress reproductive hormones, delay ovulation, and affect menstrual regularity."
+  },
+  {
+    "question": "Why do I feel tearful unexpectedly?",
+    "answer": "Hormonal shifts, especially drops in estrogen, can heighten emotional sensitivity and cause spontaneous tears."
+  },
+  {
+    "question": "Can herbal teas ease menstrual discomfort?",
+    "answer": "Chamomile, ginger, and peppermint can reduce cramps, calm the nervous system, and improve mood."
+  },
+  {
+    "question": "How does alcohol affect hormonal balance?",
+    "answer": "Alcohol disrupts estrogen metabolism and increases cortisol, potentially worsening mood swings and sleep issues."
+  },
+  {
+    "question": "Why do I feel foggy-brained during stress?",
+    "answer": "Stress hormones reduce neurotransmitter efficiency, impairing focus, memory, and mental clarity."
+  },
+  {
+    "question": "Can deep breathing exercises help with PMS anxiety?",
+    "answer": "Deep, slow breaths activate the parasympathetic nervous system, lowering heart rate and easing anxious feelings."
+  },
+  {
+    "question": "Why do I feel low energy after intense emotional events?",
+    "answer": "Emotional stress depletes neurotransmitters and energy reserves, causing temporary fatigue and sluggishness."
+  },
+  {
+    "question": "Can regular sleep routines support hormonal balance?",
+    "answer": "Consistent sleep stabilizes cortisol and reproductive hormones, reducing mood swings and fatigue."
+  },
+  {
+    "question": "Why do I feel more emotional during ovulation?",
+    "answer": "Peak estrogen during ovulation enhances emotional sensitivity, making feelings more intense."
+  },
+  {
+    "question": "How does caffeine influence anxiety?",
+    "answer": "Caffeine stimulates adrenaline and increases heart rate, which can intensify anxious feelings in sensitive individuals."
+  },
+  {
+    "question": "Can light exercise reduce PMS symptoms?",
+    "answer": "Gentle activity boosts endorphins, improves circulation, and alleviates cramps, fatigue, and mood swings."
+  },
+  {
+    "question": "Why do I crave salty foods before my period?",
+    "answer": "Hormonal changes affect fluid retention and cravings, often increasing appetite for salt to balance electrolytes."
+  },
+  {
+    "question": "Can vitamin B complex improve mood stability?",
+    "answer": "B vitamins support neurotransmitter synthesis, helping regulate stress, anxiety, and emotional balance."
+  },
+  {
+    "question": "Why do I feel more sensitive to social interactions premenstrually?",
+    "answer": "Hormonal fluctuations can heighten emotional reactivity, making social cues feel more intense or overwhelming."
+  },
+  {
+    "question": "How does chronic sleep deprivation affect hormones?",
+    "answer": "Insufficient sleep elevates cortisol, reduces insulin sensitivity, and disrupts estrogen and progesterone balance."
+  },
+  {
+    "question": "Can meditation improve focus during hormonal fluctuations?",
+    "answer": "Meditation enhances attention regulation and calms stress-induced cognitive disruptions, improving clarity."
+  },
+  {
+    "question": "Why do I feel anxious after missing a meal?",
+    "answer": "Low blood sugar triggers cortisol and adrenaline spikes, increasing nervousness and irritability."
+  },
+  {
+    "question": "How does serotonin affect emotional health?",
+    "answer": "Serotonin regulates mood, sleep, and stress response; low levels can increase anxiety and depressive symptoms."
+  },
+  {
+    "question": "Can stretching exercises improve PMS discomfort?",
+    "answer": "Stretching relaxes muscles, improves circulation, and reduces cramp-related tension and discomfort."
+  },
+  {
+    "question": "Why do I feel fatigued during stressful periods at work?",
+    "answer": "Stress increases cortisol and depletes energy reserves, causing fatigue and reduced motivation."
+  },
+  {
+    "question": "Can journaling help with mood swings?",
+    "answer": "Writing thoughts clarifies emotions, reduces rumination, and helps track patterns in mood fluctuations."
+  },
+  {
+    "question": "How do hormonal changes affect focus?",
+    "answer": "Fluctuations in estrogen and progesterone can temporarily impair attention, memory, and cognitive sharpness."
+  },
+  {
+    "question": "Why do I feel anxious in the afternoon despite sleeping well?",
+    "answer": "Post-lunch cortisol spikes and blood sugar fluctuations can temporarily increase feelings of anxiety."
+  },
+  {
+    "question": "Can omega-3 supplements ease PMS symptoms?",
+    "answer": "Omega-3 fatty acids reduce inflammation and support neurotransmitter balance, easing cramps and emotional symptoms."
+  },
+  {
+    "question": "Why do I feel restless at night during PMS?",
+    "answer": "Progesterone and estrogen fluctuations can affect melatonin and nervous system tone, causing nighttime restlessness."
+  },
+  {
+    "question": "How can gratitude practices support emotional health?",
+    "answer": "Regularly noting positive experiences boosts serotonin and dopamine, improving resilience to hormonal mood swings."
+  },
+  {
+    "question": "Can magnesium supplements reduce irritability?",
+    "answer": "Magnesium supports GABA receptors, promoting calmness and reducing premenstrual irritability."
+  },
+  {
+    "question": "Why do I feel more sensitive to noise or light premenstrually?",
+    "answer": "Hormonal fluctuations can heighten sensory sensitivity, making external stimuli feel overwhelming."
+  },
+  {
+    "question": "How does chronic anxiety affect hormonal health?",
+    "answer": "Persistent anxiety elevates cortisol, which can disrupt reproductive hormone balance and menstrual regularity."
+  },
+  {
+    "question": "Can herbal adaptogens support stress management?",
+    "answer": "Adaptogens like ashwagandha or rhodiola help normalize cortisol levels and improve emotional resilience."
+  },
+  {
+    "question": "Why do I feel more emotional after arguments?",
+    "answer": "Emotional stress triggers cortisol and adrenaline, amplifying hormonal sensitivity and emotional responses."
+  },
+  {
+    "question": "How does gut health influence emotional well-being?",
+    "answer": "Gut bacteria produce neurotransmitters like serotonin; imbalance can worsen anxiety, mood swings, and stress response."
+  },
+  {
+    "question": "Can breathing exercises improve focus?",
+    "answer": "Controlled breathing reduces stress hormones, calms the mind, and improves attention and mental clarity."
+  },
+  {
+    "question": "Why do I feel tearful during ovulation?",
+    "answer": "Estrogen peaks can increase emotional sensitivity, making tearfulness more likely during ovulation."
+  },
+  {
+    "question": "How can consistent meal timings support hormonal balance?",
+    "answer": "Regular meals stabilize blood sugar and insulin, preventing cortisol spikes that affect mood and energy."
+  },
+  {
+    "question": "Why do I feel anxious when skipping exercise?",
+    "answer": "Physical activity regulates cortisol and endorphins; skipping exercise can lead to increased stress and irritability."
+  },
+  {
+    "question": "Can magnesium-rich foods help with sleep?",
+    "answer": "Magnesium supports GABA receptors, promoting relaxation and improving sleep quality."
+  },
+  {
+    "question": "Why do I feel more sensitive to emotional triggers premenstrually?",
+    "answer": "Progesterone and estrogen fluctuations heighten limbic system activity, increasing emotional reactivity."
+  },
+  {
+    "question": "How does chronic stress affect reproductive health?",
+    "answer": "Prolonged cortisol elevation can suppress ovulation, disrupt menstrual cycles, and affect fertility."
+  },
+  {
+    "question": "Can mindfulness improve hormone-driven mood swings?",
+    "answer": "Mindfulness reduces cortisol and enhances emotional regulation, helping manage mood changes linked to hormones."
+  },
+  {
+    "question": "Why do I feel fatigued after emotional arguments?",
+    "answer": "Emotional stress depletes neurotransmitters and energy, causing post-conflict fatigue."
+  },
+  {
+    "question": "How do vitamin B6 and B12 support mood?",
+    "answer": "These vitamins aid neurotransmitter synthesis, supporting serotonin and dopamine balance for better mood stability."
+  },
+  {
+    "question": "Why do I feel anxious after caffeine?",
+    "answer": "Caffeine stimulates adrenaline and cortisol, which can increase nervousness and anxious feelings."
+  },
+  {
+    "question": "Can herbal teas support emotional well-being?",
+    "answer": "Teas like chamomile and lemon balm reduce stress hormones and promote calmness during hormonal fluctuations."
+  },
+  {
+    "question": "Why do I feel sleepy after stressful events?",
+    "answer": "Stress initially triggers adrenaline, followed by neurotransmitter depletion, causing fatigue and drowsiness."
+  },
+  {
+    "question": "How can deep breathing reduce irritability?",
+    "answer": "Slow breathing activates the parasympathetic system, lowering cortisol and calming emotional responses."
+  },
+  {
+    "question": "Why do I feel more emotional in the morning?",
+    "answer": "Cortisol peaks in the morning can amplify mood swings, especially when combined with hormonal fluctuations."
+  },
+  {
+    "question": "Can balanced meals improve mood during PMS?",
+    "answer": "Eating protein, fiber, and complex carbs stabilizes blood sugar, helping regulate serotonin and reduce irritability."
+  },
+  {
+    "question": "Why do I feel anxious after poor sleep?",
+    "answer": "Lack of sleep elevates cortisol and lowers serotonin, which can increase anxiety and emotional reactivity."
+  },
+  {
+    "question": "How does estrogen affect cognitive function?",
+    "answer": "Estrogen supports neurotransmitters like acetylcholine, enhancing focus, memory, and emotional regulation."
+  },
+  {
+    "question": "Can journaling reduce hormonal anxiety?",
+    "answer": "Writing down worries helps process emotions, reduces rumination, and provides perspective during hormonal shifts."
+  },
+  {
+    "question": "Why do I feel fatigued despite good nutrition?",
+    "answer": "Hormonal imbalances, stress, or disrupted sleep can prevent optimal energy even with a healthy diet."
+  },
+  {
+    "question": "How can regular exercise stabilize mood?",
+    "answer": "Exercise balances cortisol, boosts endorphins, and supports neurotransmitters, improving mood and energy."
+  },
+  {
+    "question": "Why do I feel irritable after skipping meals?",
+    "answer": "Low blood sugar triggers cortisol and adrenaline spikes, which heighten irritability and stress response."
+  },
+  {
+    "question": "Can mindfulness reduce ovulation-related anxiety?",
+    "answer": "Mindfulness practices lower cortisol and improve emotional regulation, helping ease temporary anxiety during ovulation."
+  },
+  {
+    "question": "Why do I experience brain fog before my period?",
+    "answer": "Estrogen and progesterone fluctuations affect neurotransmitter activity, which can impair focus and memory."
+  },
+  {
+    "question": "How does progesterone affect body temperature?",
+    "answer": "Progesterone slightly raises basal body temperature, which can influence sleep patterns and energy levels."
+  },
+  {
+    "question": "Can magnesium ease PMS cramps?",
+    "answer": "Magnesium relaxes muscles and reduces inflammation, helping relieve menstrual cramps and discomfort."
+  },
+  {
+    "question": "Why do I feel restless during hormonal changes?",
+    "answer": "Fluctuations in progesterone and cortisol can increase nervous system excitability, causing restlessness."
+  },
+  {
+    "question": "How does cortisol affect appetite?",
+    "answer": "High cortisol can increase cravings for sugary and fatty foods, impacting mood and weight."
+  },
+  {
+    "question": "Why do I feel anxious during stressful workdays?",
+    "answer": "Chronic stress elevates cortisol, which can amplify emotional sensitivity and trigger anxiety."
+  },
+  {
+    "question": "Can yoga reduce premenstrual tension?",
+    "answer": "Yoga lowers stress hormones, promotes relaxation, and supports hormonal balance, reducing PMS tension."
+  },
+  {
+    "question": "Why do I feel tearful without reason?",
+    "answer": "Hormonal fluctuations, particularly drops in estrogen, increase emotional sensitivity and tearfulness."
+  },
+  {
+    "question": "How does vitamin D affect serotonin?",
+    "answer": "Vitamin D supports serotonin synthesis; deficiency can contribute to low mood and emotional instability."
+  },
+  {
+    "question": "Can hydration reduce PMS fatigue?",
+    "answer": "Staying hydrated prevents electrolyte imbalances and supports energy levels, reducing fatigue and irritability."
+  },
+  {
+    "question": "Why do I crave carbs before my period?",
+    "answer": "Progesterone increases appetite for carbohydrates, which temporarily boost serotonin and improve mood."
+  },
+  {
+    "question": "How can breathing exercises help mood swings?",
+    "answer": "Deep, slow breathing activates the parasympathetic system, reducing cortisol and calming emotional fluctuations."
+  },
+  {
+    "question": "Why do I feel anxious after skipping workouts?",
+    "answer": "Exercise regulates stress hormones; missing a session can cause temporary anxiety and irritability."
+  },
+  {
+    "question": "Can magnesium support calmness during PMS?",
+    "answer": "Magnesium aids GABA receptor function, promoting relaxation and reducing premenstrual irritability."
+  },
+  {
+    "question": "Why do I feel sleepy after stressful events?",
+    "answer": "Stress initially triggers adrenaline, followed by neurotransmitter depletion, leading to fatigue and drowsiness."
+  },
+  {
+    "question": "How does serotonin affect PMS symptoms?",
+    "answer": "Serotonin helps regulate mood, sleep, and appetite; low levels can worsen irritability and cravings."
+  },
+  {
+    "question": "Can consistent sleep routines improve hormonal balance?",
+    "answer": "Regular sleep stabilizes cortisol and reproductive hormones, reducing mood swings and improving energy."
+  },
+  {
+    "question": "Why do I feel anxious in the afternoon?",
+    "answer": "Post-lunch cortisol spikes and blood sugar fluctuations can temporarily increase anxiety and nervousness."
+  },
+  {
+    "question": "How can journaling reduce emotional fatigue?",
+    "answer": "Writing thoughts helps release emotional tension and track mood patterns, improving resilience."
+  },
+  {
+    "question": "Why do I feel sensitive to criticism premenstrually?",
+    "answer": "Hormonal fluctuations heighten emotional reactivity, making feedback feel more intense than usual."
+  },
+  {
+    "question": "Can omega-3s reduce PMS irritability?",
+    "answer": "Omega-3 fatty acids support neurotransmitter balance, helping to stabilize mood and reduce irritability."
+  },
+  {
+    "question": "Why do I feel restless at night during PMS?",
+    "answer": "Progesterone and estrogen changes can disrupt sleep and increase nervous system activity at night."
+  },
+  {
+    "question": "How can gratitude practices improve mood?",
+    "answer": "Noting positive experiences boosts serotonin and dopamine, enhancing emotional resilience to hormonal shifts."
+  },
+  {
+    "question": "Why do I feel tearful after arguments?",
+    "answer": "Emotional stress triggers cortisol and adrenaline, amplifying hormonal sensitivity and emotional responses."
+  },
+  {
+    "question": "Can probiotics support emotional balance?",
+    "answer": "Gut bacteria influence neurotransmitter production; balanced gut flora can reduce anxiety and improve mood."
+  },
+  {
+    "question": "Why do I feel fatigued after work stress?",
+    "answer": "Stress hormones deplete energy and neurotransmitters, causing post-stress fatigue and low motivation."
+  },
+  {
+    "question": "How can meditation improve focus during hormonal fluctuations?",
+    "answer": "Meditation enhances attention regulation, calms stress-induced cognitive disruptions, and improves mental clarity."
+  },
+  {
+    "question": "Why do I feel anxious after caffeine?",
+    "answer": "Caffeine increases adrenaline and cortisol, which can heighten nervousness and emotional sensitivity."
+  },
+  {
+    "question": "Can herbal adaptogens ease stress?",
+    "answer": "Adaptogens like ashwagandha help normalize cortisol levels and improve resilience to emotional and hormonal stress."
+  },
+  {
+    "question": "Why do I feel low energy during PMS?",
+    "answer": "Hormonal changes affect neurotransmitters and energy metabolism, causing temporary fatigue."
+  },
+  {
+    "question": "How does chronic stress affect reproductive hormones?",
+    "answer": "Prolonged cortisol elevation can disrupt ovulation and menstrual regularity, affecting overall hormonal balance."
+  },
+  {
+    "question": "Can yoga improve emotional regulation?",
+    "answer": "Yoga reduces cortisol, increases endorphins, and helps balance emotional responses during hormonal changes."
+  },
+  {
+    "question": "Why do I feel sensitive to social cues before my period?",
+    "answer": "Hormonal fluctuations can heighten emotional reactivity, making social interactions feel more intense."
+  },
+  {
+    "question": "How does chronic sleep loss affect mood?",
+    "answer": "Insufficient sleep elevates cortisol, reduces serotonin, and impairs emotional regulation, increasing irritability."
+  },
+  {
+    "question": "Can meditation reduce PMS irritability?",
+    "answer": "Regular meditation lowers stress hormones and enhances emotional regulation, easing irritability and mood swings."
+  },
+  {
+    "question": "Why do I feel fatigued after intense emotional experiences?",
+    "answer": "Emotional stress depletes neurotransmitters and energy, causing temporary fatigue and sluggishness."
+  },
+  {
+    "question": "How do vitamins B6 and B12 support mood stability?",
+    "answer": "These vitamins aid neurotransmitter synthesis, supporting serotonin and dopamine balance for better emotional health."
+  },
+  {
+    "question": "Why do I feel anxious at night?",
+    "answer": "Evening dips in cortisol combined with racing thoughts and hormonal sensitivities can increase nighttime anxiety."
+  },
+  {
+    "question": "Can herbal teas support mood during hormonal changes?",
+    "answer": "Chamomile, lemon balm, and peppermint teas reduce stress hormones and promote calmness during fluctuations."
+  },
+  {
+    "question": "Why do I feel foggy-brained premenstrually?",
+    "answer": "Estrogen and progesterone fluctuations can impair neurotransmitter activity, reducing focus and clarity."
+  },
+  {
+    "question": "How does hydration influence mood during PMS?",
+    "answer": "Proper hydration supports neurotransmitter function and energy, helping reduce irritability and fatigue."
+  },
+  {
+    "question": "Can balanced meals reduce hormonal anxiety?",
+    "answer": "Eating consistently with adequate nutrients stabilizes blood sugar and supports neurotransmitter balance, reducing anxiety."
+  },
+  {
+    "question": "Why do I feel irritable after missing a workout?",
+    "answer": "Exercise regulates cortisol and endorphins; skipping can temporarily increase stress and irritability."
+  },
+  {
+    "question": "Can magnesium-rich foods improve calmness?",
+    "answer": "Magnesium supports GABA receptors, promoting relaxation and reducing irritability during hormonal changes."
+  },
+  {
+    "question": "Why do I feel emotional after arguments?",
+    "answer": "Emotional stress triggers cortisol and adrenaline, which amplify hormonal sensitivity and emotional reactions."
+  },
+  {
+    "question": "How does serotonin affect PMS symptoms?",
+    "answer": "Serotonin regulates mood, sleep, and appetite; low levels can worsen irritability, anxiety, and cravings."
+  },
+  {
+    "question": "Can mindfulness help with brain fog?",
+    "answer": "Mindfulness reduces cortisol, improves attention, and helps manage cognitive difficulties caused by hormonal fluctuations."
+  },
+  {
+    "question": "Why do I crave sugar premenstrually?",
+    "answer": "Progesterone increases cravings for sweets to temporarily boost serotonin and stabilize mood."
+  },
+  {
+    "question": "How can gratitude practices enhance emotional resilience?",
+    "answer": "Focusing on positive experiences increases serotonin and dopamine, improving ability to cope with mood swings."
+  },
+  {
+    "question": "Why do I feel anxious during ovulation?",
+    "answer": "Estrogen peaks can heighten emotional sensitivity, temporarily increasing anxiety or mood fluctuations."
+  },
+  {
+    "question": "Can probiotics improve mood?",
+    "answer": "Balanced gut flora supports neurotransmitter production, which can reduce anxiety and enhance emotional health."
+  },
+  {
+    "question": "Why do I feel restless at night premenstrually?",
+    "answer": "Hormonal changes affect melatonin and nervous system tone, causing difficulty relaxing and restlessness."
+  },
+  {
+    "question": "How can meditation improve focus?",
+    "answer": "Meditation enhances attention regulation and calms stress-induced cognitive disruptions, improving mental clarity."
+  },
+  {
+    "question": "Why do I feel tearful unexpectedly?",
+    "answer": "Hormonal shifts, especially drops in estrogen, increase emotional sensitivity and spontaneous tearfulness."
+  },
+  {
+    "question": "Can consistent sleep routines support emotional balance?",
+    "answer": "Regular sleep stabilizes cortisol and reproductive hormones, reducing irritability and improving energy levels."
+  },
+  {
+    "question": "Why do I feel fatigued despite good sleep?",
+    "answer": "Hormonal imbalances, stress, or poor sleep quality can prevent restorative rest, causing daytime fatigue."
+  },
+  {
+    "question": "How does chronic stress affect mood?",
+    "answer": "Persistent stress elevates cortisol, which impairs neurotransmitter balance, increasing anxiety, irritability, and emotional fatigue."
+  },
+  {
+    "question": "Can yoga improve focus and calmness?",
+    "answer": "Yoga reduces cortisol, increases endorphins, and promotes emotional regulation, enhancing clarity and calm."
+  },
+  {
+    "question": "Why do I feel anxious after caffeine?",
+    "answer": "Caffeine increases adrenaline and cortisol, which can heighten nervousness and sensitivity during hormonal changes."
+  },
+  {
+    "question": "Can herbal adaptogens support emotional resilience?",
+    "answer": "Adaptogens like ashwagandha normalize cortisol levels, helping manage stress and hormonal emotional fluctuations."
+  },
+  {
+    "question": "Why do I feel low energy during stress?",
+    "answer": "Stress depletes neurotransmitters and energy reserves, causing fatigue and reduced motivation."
+  },
+  {
+    "question": "How does chronic sleep loss affect reproductive hormones?",
+    "answer": "Insufficient sleep disrupts cortisol and reproductive hormones, affecting menstrual regularity and emotional stability."
+  },
+  {
+    "question": "Can meditation reduce hormonal irritability?",
+    "answer": "Mindfulness practices lower stress hormones and enhance emotional regulation, easing irritability and mood swings."
+  },
+  {
+    "question": "Why do I feel fatigued after emotional events?",
+    "answer": "Emotional stress consumes neurotransmitters and energy, causing temporary fatigue and sluggishness."
+  },
+  {
+    "question": "what are the best superfoods for women?",
+    "answer": "Berries, leafy greens, avocados, flaxseeds, and yogurt support hormones, immunity, and energy levels."
+  },
+  {
+    "question": "how much protein should i eat daily?",
+    "answer": "Aim for 0.8–1.2g per kg of body weight daily, or more if active. Include eggs, lentils, fish, or tofu."
+  },
+  {
+    "question": "can i do strength training with pcos?",
+    "answer": "Yes! Resistance training helps regulate insulin and hormones. Start with bodyweight or light weights."
+  },
+  {
+    "question": "are smoothies good for weight loss?",
+    "answer": "They can be, if low in sugar and high in protein/fiber. Use greens, berries, and protein powder."
+  },
+  {
+    "question": "how often should women exercise weekly?",
+    "answer": "150 minutes of moderate cardio and 2–3 strength sessions per week improves health and hormonal balance."
+  },
+  {
+    "question": "can yoga help with hormonal balance?",
+    "answer": "Yes, yoga reduces stress, boosts circulation, and supports endocrine function — especially hatha or restorative styles."
+  },
+  {
+    "question": "is intermittent fasting safe for women?",
+    "answer": "It can be if done moderately, but avoid long fasts on periods or if pregnant. Listen to your body."
+  },
+  {
+    "question": "what snacks are healthy for women?",
+    "answer": "Nuts, fruits, yogurt, hummus with veggies, or boiled eggs are nutrient-dense options."
+  },
+  {
+    "question": "how to increase metabolism naturally?",
+    "answer": "Exercise, high-protein meals, green tea, good sleep, and staying hydrated can gently boost metabolism."
+  },
+  {
+    "question": "are low-carb diets safe for women?",
+    "answer": "Moderate low-carb can be fine, but extreme restriction may affect hormones and energy. Balance with veggies and protein."
+  },
+  {
+    "question": "how to lose belly fat after pregnancy?",
+    "answer": "Combine gentle cardio, strength exercises, core workouts, and a protein-rich balanced diet. Patience is key."
+  },
+  {
+    "question": "should women take vitamin supplements?",
+    "answer": "Yes, if diet lacks nutrients. Vitamin D, B12, iron, calcium, and omega-3s are commonly needed."
+  },
+  {
+    "question": "can skipping meals help weight loss?",
+    "answer": "Not really. Skipping can slow metabolism and increase cravings. Eat balanced, smaller meals instead."
+  },
+  {
+    "question": "how much water should women drink daily?",
+    "answer": "Aim for 2–3 liters, more if active or in hot climates. Hydration supports skin, digestion, and energy."
+  },
+  {
+    "question": "are protein powders safe for women?",
+    "answer": "Yes, especially plant-based or whey, when used moderately. They support muscle, satiety, and metabolism."
+  },
+  {
+    "question": "can cardio alone reduce weight?",
+    "answer": "Cardio helps burn calories, but strength training and nutrition are essential for long-term weight control."
+  },
+  {
+    "question": "best foods for energy in women?",
+    "answer": "Oats, eggs, nuts, fruits, and legumes provide steady energy and prevent blood sugar dips."
+  },
+  {
+    "question": "how to reduce sugar cravings naturally?",
+    "answer": "Eat protein-rich snacks, stay hydrated, add cinnamon to meals, and avoid skipping meals to prevent spikes."
+  },
+  {
+    "question": "can walking daily improve health?",
+    "answer": "Yes! 30–60 minutes daily improves circulation, mood, and aids in maintaining a healthy weight."
+  },
+  {
+    "question": "are cheat meals bad for diet?",
+    "answer": "Not at all. Occasional indulgence is fine and can prevent binge eating. Moderation is key."
+  },
+  {
+    "question": "how to improve gut health?",
+    "answer": "Include fermented foods, fiber-rich veggies, fruits, and stay hydrated. Probiotics may help too."
+  },
+  {
+    "question": "can women do HIIT workouts safely?",
+    "answer": "Yes, if healthy. Start gradually, focus on form, and listen to your body. HIIT boosts metabolism and fitness."
+  },
+  {
+    "question": "best breakfast foods for weight management?",
+    "answer": "Oatmeal, eggs, Greek yogurt, smoothies with protein and greens help keep you full and balanced."
+  },
+  {
+    "question": "how to gain muscle as a woman?",
+    "answer": "Combine resistance training, protein-rich diet, adequate sleep, and progressive overload for muscle growth."
+  },
+  {
+    "question": "are energy drinks safe for women?",
+    "answer": "Occasional is okay, but frequent use can spike heart rate and affect hormones. Prefer natural energy sources."
+  },
+  {
+    "question": "can coconut oil be used for cooking?",
+    "answer": "Yes, in moderation. It’s stable for medium heat and adds healthy fats, but don’t overconsume."
+  },
+  {
+    "question": "should women lift heavy weights?",
+    "answer": "Yes! Heavy lifting helps bone density, muscle tone, and metabolism. Don’t fear getting bulky."
+  },
+  {
+    "question": "how to prevent hair loss while dieting?",
+    "answer": "Eat adequate protein, iron, zinc, and avoid extreme calorie restriction. Hydration also matters."
+  },
+  {
+    "question": "best post-workout snacks for women?",
+    "answer": "Protein shakes, Greek yogurt, boiled eggs, or a banana with peanut butter replenish energy and muscles."
+  },
+  {
+    "question": "how often should women rest after workouts?",
+    "answer": "Rest 24–48 hours for major muscle groups. Recovery is as important as exercise for progress."
+  },
+  {
+    "question": "are cheat days helpful for weight loss?",
+    "answer": "Yes, they prevent diet fatigue and improve adherence if controlled. One meal, not a whole day."
+  },
+  {
+    "question": "can diet improve mood?",
+    "answer": "Absolutely! Omega-3s, complex carbs, and antioxidants support brain health and emotional balance."
+  },
+  {
+    "question": "should women track calories?",
+    "answer": "It helps awareness but don’t obsess. Focus on nutritious meals and portion control."
+  },
+  {
+    "question": "can green tea boost weight loss?",
+    "answer": "Yes, it slightly improves metabolism and fat oxidation when combined with a balanced diet."
+  },
+  {
+    "question": "how to balance macros in diet?",
+    "answer": "Include proteins, complex carbs, healthy fats, and fiber in each meal for sustained energy and health."
+  },
+  {
+    "question": "can alcohol affect hormones?",
+    "answer": "Yes, excessive alcohol can disrupt insulin, estrogen, and liver function. Moderation is important."
+  },
+  {
+    "question": "best way to track calories?",
+    "answer": "Use apps or journals to log meals and snacks. Helps identify patterns and prevent overeating."
+  },
+  {
+    "question": "can cardio improve mood?",
+    "answer": "Yes, it releases endorphins and reduces stress. Regular movement helps mental wellness."
+  },
+  {
+    "question": "how to prevent bloating during workouts?",
+    "answer": "Avoid high-sodium meals before exercise, stay hydrated, and eat balanced snacks 1–2 hours prior."
+  },
+  {
+    "question": "how to stay motivated for workouts?",
+    "answer": "Set small goals, track progress, join a class or buddy up. Celebrate milestones to keep energy high."
+  },
+  {
+    "question": "can meditation help with weight loss?",
+    "answer": "Yes, it reduces stress and cortisol levels which can help prevent stress-related cravings."
+  },
+  {
+    "question": "best foods for bone health in women?",
+    "answer": "Dairy, leafy greens, almonds, and fortified foods provide calcium and vitamin D for strong bones."
+  },
+  {
+    "question": "should women do cardio on rest days?",
+    "answer": "Light cardio like walking or yoga is fine for active recovery but avoid intense workouts to allow muscles to heal."
+  },
+  {
+    "question": "can nuts help with weight management?",
+    "answer": "Yes, they are high in protein and healthy fats which keep you full. Just watch portions."
+  },
+  {
+    "question": "how to prevent sugar cravings during period?",
+    "answer": "Eat protein and fiber-rich snacks, stay hydrated, and ensure balanced meals to stabilize blood sugar."
+  },
+  {
+    "question": "is morning or evening workout better?",
+    "answer": "Both work. Morning boosts energy and metabolism, evening can improve performance. Choose what fits your schedule."
+  },
+  {
+    "question": "can probiotics help with digestion?",
+    "answer": "Yes, fermented foods or supplements support gut flora and may reduce bloating or constipation."
+  },
+  {
+    "question": "how much fiber should women eat?",
+    "answer": "Aim for 25–30g daily from fruits, veggies, legumes, and whole grains to aid digestion and satiety."
+  },
+  {
+    "question": "is coconut water good after workouts?",
+    "answer": "Yes, it replenishes electrolytes and hydrates naturally, making it a great post-exercise drink."
+  },
+  {
+    "question": "how to gain weight healthily?",
+    "answer": "Focus on protein-rich meals, healthy fats, whole grains, and strength training to gain lean muscle, not fat."
+  },
+  {
+    "question": "can dark chocolate be healthy?",
+    "answer": "Yes, in moderation. It’s rich in antioxidants and can satisfy cravings without derailing your diet."
+  },
+  {
+    "question": "are meal replacements safe for women?",
+    "answer": "Occasionally, yes. Prefer options with balanced protein, carbs, fiber, and minimal sugar."
+  },
+  {
+    "question": "best snacks for energy at work?",
+    "answer": "Nuts, fruits, yogurt, or boiled eggs are nutrient-dense, keeping energy steady through the day."
+  },
+  {
+    "question": "can women do push-ups daily?",
+    "answer": "Yes, it strengthens upper body and core, but allow 24h rest for major muscle recovery if intensity is high."
+  },
+  {
+    "question": "how to avoid overeating at dinner?",
+    "answer": "Eat balanced meals throughout the day, include protein and fiber, and serve smaller portions at dinner."
+  },
+  {
+    "question": "can water help in weight loss?",
+    "answer": "Yes, staying hydrated reduces hunger, supports metabolism, and aids digestion naturally."
+  },
+  {
+    "question": "should women lift weights for weight loss?",
+    "answer": "Absolutely! Resistance training builds muscle, boosts metabolism, and shapes the body effectively."
+  },
+  {
+    "question": "how to recover after intense workout?",
+    "answer": "Stretch, hydrate, eat protein-rich meals, and rest. Adequate sleep enhances recovery too."
+  },
+  {
+    "question": "best sources of omega-3 for women?",
+    "answer": "Fatty fish like salmon, chia seeds, flaxseeds, and walnuts support brain, heart, and hormonal health."
+  },
+  {
+    "question": "can skipping carbs help lose weight?",
+    "answer": "Extreme restriction isn’t recommended. Focus on complex carbs like oats, quinoa, and sweet potatoes."
+  },
+  {
+    "question": "how to build endurance naturally?",
+    "answer": "Gradual cardio progression, interval training, proper nutrition, and adequate sleep enhance stamina safely."
+  },
+  {
+    "question": "can women do squats daily?",
+    "answer": "Yes, but vary intensity and include rest for muscles to recover. Focus on correct form."
+  },
+  {
+    "question": "best breakfast for hormonal balance?",
+    "answer": "Include protein, healthy fats, and complex carbs — eggs, oats with nuts, or avocado toast work well."
+  },
+  {
+    "question": "can stress affect weight loss?",
+    "answer": "Yes, high cortisol can trigger cravings and fat storage. Manage stress with yoga, meditation, or walks."
+  },
+  {
+    "question": "how to boost metabolism after 30?",
+    "answer": "Strength training, protein-rich meals, staying active, and enough sleep help maintain metabolic rate."
+  },
+  {
+    "question": "are smoothies better than meals?",
+    "answer": "They can complement meals but shouldn’t replace them entirely. Ensure fiber, protein, and healthy fats are included."
+  },
+  {
+    "question": "how to avoid muscle soreness?",
+    "answer": "Warm-up, stretch, hydrate, and cool down after workouts. Gradual intensity helps prevent soreness."
+  },
+  {
+    "question": "can green veggies help with weight loss?",
+    "answer": "Yes, low-calorie, high-fiber veggies keep you full and provide essential vitamins and minerals."
+  },
+  {
+    "question": "how to eat healthy on a tight schedule?",
+    "answer": "Meal prep, keep healthy snacks handy, and prioritize balanced meals to stay consistent."
+  },
+  {
+    "question": "can I do yoga and cardio together?",
+    "answer": "Yes, combining cardio with yoga improves endurance, flexibility, and stress relief effectively."
+  },
+  {
+    "question": "best hydration tips during workouts?",
+    "answer": "Drink water before, during, and after exercise. Include electrolytes for intense or long sessions."
+  },
+  {
+    "question": "how can i improve thyroid health naturally?",
+    "answer": "Eat selenium-rich foods like Brazil nuts, include iodine in moderation, manage stress, and exercise regularly."
+  },
+  {
+    "question": "can hypothyroidism cause weight gain?",
+    "answer": "Yes, slow metabolism due to low thyroid hormones can lead to weight gain. Medication and diet help."
+  },
+  {
+    "question": "best foods for strong bones?",
+    "answer": "Dairy, leafy greens, almonds, and fortified foods provide calcium and vitamin D for healthy bones."
+  },
+  {
+    "question": "how to boost immunity naturally?",
+    "answer": "Eat colorful fruits and vegetables, get adequate sleep, exercise regularly, and manage stress effectively."
+  },
+  {
+    "question": "what vitamins are important for hair growth?",
+    "answer": "Vitamin B12, biotin, vitamin D, zinc, and iron are crucial for strong, healthy hair."
+  },
+  {
+    "question": "can stress affect hair health?",
+    "answer": "Yes, chronic stress can lead to hair shedding and thinning. Relaxation techniques and proper nutrition help."
+  },
+  {
+    "question": "how to prevent hair breakage?",
+    "answer": "Use mild shampoos, avoid excessive heat styling, trim regularly, and include protein-rich foods in your diet."
+  },
+  {
+    "question": "best skincare for sensitive skin?",
+    "answer": "Use gentle, fragrance-free cleansers, moisturizers, and sunscreen. Avoid harsh scrubs and chemical peels."
+  },
+  {
+    "question": "how to improve skin elasticity?",
+    "answer": "Stay hydrated, consume vitamin C and E-rich foods, use sunscreen, and consider facial exercises."
+  },
+  {
+    "question": "can thyroid problems cause hair loss?",
+    "answer": "Yes, both hypothyroidism and hyperthyroidism can lead to hair thinning or patchy hair loss."
+  },
+  {
+    "question": "how to prevent osteoporosis?",
+    "answer": "Ensure adequate calcium and vitamin D intake, regular weight-bearing exercises, and avoid smoking or excess alcohol."
+  },
+  {
+    "question": "what foods boost immunity quickly?",
+    "answer": "Citrus fruits, garlic, ginger, yogurt, and nuts can strengthen immune response effectively."
+  },
+  {
+    "question": "how often should i check thyroid levels?",
+    "answer": "Once a year is typical if healthy, but more frequent checks may be needed if symptoms or medications exist."
+  },
+  {
+    "question": "can vitamin D deficiency affect bones?",
+    "answer": "Yes, low vitamin D reduces calcium absorption, weakening bones and increasing fracture risk."
+  },
+  {
+    "question": "how to treat dry scalp naturally?",
+    "answer": "Use mild shampoos, coconut or olive oil massages, stay hydrated, and maintain a balanced diet."
+  },
+  {
+    "question": "what causes premature greying of hair?",
+    "answer": "Genetics, stress, vitamin B12 deficiency, and oxidative damage can accelerate greying."
+  },
+  {
+    "question": "how to prevent skin acne?",
+    "answer": "Keep skin clean, avoid excessive sugar and dairy, manage stress, and maintain a consistent skincare routine."
+  },
+  {
+    "question": "can exercise improve bone density?",
+    "answer": "Yes, weight-bearing exercises like walking, jogging, and resistance training strengthen bones."
+  },
+  {
+    "question": "how much calcium do women need daily?",
+    "answer": "Around 1,000 mg daily, increasing to 1,200 mg after age 50 to maintain bone health."
+  },
+  {
+    "question": "can hair supplements help growth?",
+    "answer": "Yes, supplements with biotin, zinc, and vitamins D and B12 can support hair growth if deficient."
+  },
+  {
+    "question": "how to reduce hair thinning?",
+    "answer": "Address stress, ensure proper nutrition, avoid harsh chemical treatments, and consider gentle hair care products."
+  },
+  {
+    "question": "what are signs of low immunity?",
+    "answer": "Frequent colds, slow wound healing, fatigue, and recurring infections can indicate weakened immunity."
+  },
+  {
+    "question": "can smoking affect bone health?",
+    "answer": "Yes, smoking reduces bone density and increases fracture risk. Quitting improves bone strength."
+  },
+  {
+    "question": "how to deal with brittle nails?",
+    "answer": "Increase protein, biotin, iron, and hydration. Avoid excessive nail polish or harsh chemicals."
+  },
+  {
+    "question": "can thyroid issues affect menstruation?",
+    "answer": "Yes, thyroid hormone imbalances can cause irregular or heavy periods."
+  },
+  {
+    "question": "how to strengthen immune system in winter?",
+    "answer": "Eat seasonal fruits and vegetables, exercise, sleep well, and manage stress to stay healthy."
+  },
+  {
+    "question": "best routine for healthy skin daily?",
+    "answer": "Cleanse gently, moisturize, use sunscreen, hydrate, and eat a balanced diet rich in antioxidants."
+  },
+  {
+    "question": "can vitamin C improve skin?",
+    "answer": "Yes, vitamin C boosts collagen production, brightens skin, and protects against free radicals."
+  },
+  {
+    "question": "how to prevent hair fall after pregnancy?",
+    "answer": "Eat protein-rich foods, continue prenatal vitamins, manage stress, and avoid harsh styling."
+  },
+  {
+    "question": "can zinc improve immunity?",
+    "answer": "Yes, zinc is essential for immune cell function and can reduce severity of infections."
+  },
+  {
+    "question": "how to get rid of dark circles naturally?",
+    "answer": "Ensure sleep, hydrate, apply cold compresses, and eat iron-rich foods to reduce appearance."
+  },
+  {
+    "question": "can iron deficiency cause hair loss?",
+    "answer": "Yes, low iron reduces oxygen delivery to hair follicles, leading to shedding. Eat leafy greens, lentils, and red meat."
+  },
+  {
+    "question": "how often should women get bone density tests?",
+    "answer": "Typically after age 50 or earlier if risk factors exist, like family history, low BMI, or prior fractures."
+  },
+  {
+    "question": "best way to prevent sun damage to skin?",
+    "answer": "Apply SPF 30+ sunscreen daily, wear hats and protective clothing, and avoid peak sun hours."
+  },
+  {
+    "question": "can stress cause skin breakouts?",
+    "answer": "Yes, stress triggers cortisol and oil production, worsening acne. Relaxation and skincare routines help."
+  },
+  {
+    "question": "how to improve scalp circulation?",
+    "answer": "Massage with oils, exercise regularly, and avoid tight hairstyles to boost blood flow to hair roots."
+  },
+  {
+    "question": "can hypothyroidism cause fatigue?",
+    "answer": "Yes, low thyroid hormones slow metabolism, leading to tiredness, lethargy, and reduced energy."
+  },
+  {
+    "question": "how to naturally boost vitamin D?",
+    "answer": "Sun exposure 10–20 mins daily, fatty fish, fortified milk, and supplements if levels are low."
+  },
+  {
+    "question": "can dehydration affect skin health?",
+    "answer": "Yes, insufficient water intake can make skin dry, flaky, and prone to wrinkles."
+  },
+  {
+    "question": "best diet for healthy hair?",
+    "answer": "Include protein, omega-3 fatty acids, iron, zinc, and vitamins A, C, and E for strong, shiny hair."
+  },
+  {
+    "question": "how to prevent brittle bones in young women?",
+    "answer": "Consume calcium-rich foods, vitamin D, engage in weight-bearing exercises, and avoid smoking or excess alcohol."
+  },
+  {
+    "question": "can sleep affect immunity?",
+    "answer": "Yes, poor sleep reduces immune function, increases inflammation, and slows recovery from illness."
+  },
+  {
+    "question": "how to treat oily skin naturally?",
+    "answer": "Use gentle foaming cleansers, avoid over-washing, use oil-free moisturizers, and consider clay masks weekly."
+  },
+  {
+    "question": "can vitamin E help with hair growth?",
+    "answer": "Yes, it supports scalp circulation and protects follicles from oxidative damage."
+  },
+  {
+    "question": "how to manage hair thinning due to menopause?",
+    "answer": "Ensure adequate protein, consider hormone therapy under doctor guidance, and use gentle hair care products."
+  },
+  {
+    "question": "can hyperthyroidism cause weight loss?",
+    "answer": "Yes, high thyroid hormone levels increase metabolism, sometimes causing unintentional weight loss."
+  },
+  {
+    "question": "what are signs of vitamin D deficiency?",
+    "answer": "Fatigue, bone pain, muscle weakness, and frequent infections can indicate low vitamin D levels."
+  },
+  {
+    "question": "how to reduce hair frizz?",
+    "answer": "Use sulfate-free shampoos, conditioner, avoid heat styling, and apply lightweight oils like argan or coconut."
+  },
+  {
+    "question": "can smoking affect skin aging?",
+    "answer": "Yes, smoking accelerates wrinkles, reduces collagen, and impairs skin healing."
+  },
+  {
+    "question": "best supplements for bone health?",
+    "answer": "Calcium, vitamin D, magnesium, and vitamin K2 help maintain strong bones, especially in women over 40."
+  },
+  {
+    "question": "can alcohol affect immunity?",
+    "answer": "Yes, excessive alcohol impairs immune response, increases susceptibility to infections, and slows healing."
+  },
+  {
+    "question": "how to prevent hair split ends?",
+    "answer": "Trim regularly, avoid harsh heat or chemical treatments, and use nourishing oils or conditioners."
+  },
+  {
+    "question": "can thyroid medication affect weight?",
+    "answer": "Yes, proper dosing can normalize metabolism, while under- or overdosing may cause weight changes."
+  },
+  {
+    "question": "how to maintain healthy nails?",
+    "answer": "Keep nails trimmed, moisturize, avoid biting, and ensure protein, biotin, and zinc in your diet."
+  },
+  {
+    "question": "what causes dark spots on skin?",
+    "answer": "Sun exposure, hormonal changes, aging, and inflammation can cause hyperpigmentation."
+  },
+  {
+    "question": "how to naturally strengthen hair roots?",
+    "answer": "Massage scalp, consume protein and iron-rich foods, avoid tight hairstyles, and reduce stress."
+  },
+  {
+    "question": "can poor diet affect immunity?",
+    "answer": "Yes, lack of vitamins and minerals weakens immune response. Eat a balanced diet for optimal protection."
+  },
+  {
+    "question": "how to reduce cellulite naturally?",
+    "answer": "Maintain healthy weight, hydrate, exercise, and eat a diet rich in fiber and antioxidants."
+  },
+  {
+    "question": "can iodine deficiency affect thyroid?",
+    "answer": "Yes, low iodine impairs thyroid hormone production, leading to goiter and hypothyroid symptoms."
+  },
+  {
+    "question": "how to improve hair shine naturally?",
+    "answer": "Use natural oils, rinse with cool water, maintain a balanced diet, and avoid excessive heat styling."
+  },
+  {
+    "question": "can vitamin B12 deficiency cause fatigue?",
+    "answer": "Yes, it reduces red blood cell production, leading to tiredness and weakness."
+  },
+  {
+    "question": "whats the best way to lose wight?",
+    "answer": "Focus on a balanced diet, regular exercise, and adequate sleep. Consistency matters more than extreme measures."
+  },
+  {
+    "question": "how can i stop geting pimples?",
+    "answer": "Keep your face clean, avoid touching it, reduce sugar intake, and use non-comedogenic skincare products."
+  },
+  {
+    "question": "is it normal to feel tired all da time?",
+    "answer": "Persistent fatigue can be due to poor sleep, stress, anemia, or thyroid issues. Consider seeing a doctor if it continues."
+  },
+  {
+    "question": "i cant sleep at nite any tips?",
+    "answer": "Dim lights before bed, avoid caffeine late in the day, and try relaxing activities like reading or meditation."
+  },
+  {
+    "question": "whats the diference between pcos and pcod?",
+    "answer": "PCOD is multiple immature follicles in ovaries, often with irregular cycles. PCOS is a hormonal disorder affecting ovulation and insulin."
+  },
+  {
+    "question": "is it bad to skip breakfast?",
+    "answer": "Occasional fasting is fine if intentional. Skipping breakfast regularly can lower energy and disrupt hormones."
+  },
+  {
+    "question": "can stress mess up my period?",
+    "answer": "Yes, stress increases cortisol which can delay or skip periods temporarily."
+  },
+  {
+    "question": "how to reduse hair fall naturally?",
+    "answer": "Eat protein-rich foods, iron, and omega-3s, massage your scalp, and reduce heat or chemical treatments."
+  },
+  {
+    "question": "i feel bloated after eating what to do?",
+    "answer": "Eat slowly, avoid carbonated drinks, reduce processed foods, and stay hydrated. Track foods that trigger bloating."
+  },
+  {
+    "question": "does milk cause acne?",
+    "answer": "For some people, yes — particularly skim milk. Observe changes if you reduce dairy intake."
+  },
+  {
+    "question": "can i take iron and calcium together?",
+    "answer": "No, they can block each other's absorption. Take them at least 2 hours apart."
+  },
+  {
+    "question": "is it normal to have white discharge?",
+    "answer": "Clear, odorless discharge is normal. Thick, smelly, or itchy discharge may indicate infection."
+  },
+  {
+    "question": "can i exercise during periods?",
+    "answer": "Yes! Light to moderate exercise can reduce cramps and improve mood."
+  },
+  {
+    "question": "why am i so emotional before period?",
+    "answer": "Hormonal fluctuations, especially of estrogen and progesterone, affect serotonin and mood."
+  },
+  {
+    "question": "how much water should i drink daily?",
+    "answer": "Around 2–3 liters daily, but it depends on activity level, climate, and diet."
+  },
+  {
+    "question": "is coconut water good for health?",
+    "answer": "Yes, it hydrates, supports electrolytes, and reduces bloating naturally."
+  },
+  {
+    "question": "can i eat icecream during periods?",
+    "answer": "Moderation is fine, but cold foods may worsen cramps for some women."
+  },
+  {
+    "question": "whats the best superset for arms?",
+    "answer": "Combine bicep curls with tricep dips for a balanced arm workout."
+  },
+  {
+    "question": "i keep getting dizzy after workouts why?",
+    "answer": "Low blood sugar, dehydration, or overexertion can cause dizziness. Eat a small snack and hydrate."
+  },
+  {
+    "question": "how to calm anxiety fast?",
+    "answer": "Deep breathing, short walks, mindfulness exercises, and talking to someone can help immediately."
+  },
+  {
+    "question": "what foods help with bloating?",
+    "answer": "Ginger, peppermint, fennel, and foods rich in potassium like bananas can reduce bloating."
+  },
+  {
+    "question": "is walking enough for fitness?",
+    "answer": "Walking is great for general health. Combine with strength training for best results."
+  },
+  {
+    "question": "can too much sugar affect skin?",
+    "answer": "Yes, high sugar intake can worsen acne and skin inflammation."
+  },
+  {
+    "question": "i feel cold all the time why?",
+    "answer": "Could be anemia, low thyroid, or poor circulation. Get blood tests to check levels."
+  },
+  {
+    "question": "how to boost immunity naturally?",
+    "answer": "Eat colorful vegetables and fruits, sleep well, exercise, stay hydrated, and manage stress."
+  },
+  {
+    "question": "can late periods be normal?",
+    "answer": "Yes, stress, travel, or diet changes can delay periods temporarily."
+  },
+  {
+    "question": "how to reduce sugar cravings?",
+    "answer": "Snack on fruits, nuts, or dark chocolate. Stay hydrated and get adequate protein."
+  },
+  {
+    "question": "can hormonal imbalance cause weight gain?",
+    "answer": "Yes, issues like PCOS or thyroid disorders can affect metabolism and fat storage."
+  },
+  {
+    "question": "why do i get headaches before period?",
+    "answer": "Estrogen drops before menstruation, which can trigger headaches or migraines."
+  },
+  {
+    "question": "is intermittent fasting safe for women?",
+    "answer": "It can be, if done carefully. Avoid fasting during periods or if pregnant, lactating, or underweight."
+  },
+  {
+    "question": "how to stop bloating fast?",
+    "answer": "Drink water, go for a walk, avoid gas-producing foods, and consider herbal teas like peppermint or ginger."
+  },
+  {
+    "question": "can vitamin D deficiency cause fatigue?",
+    "answer": "Yes, low vitamin D affects muscles and energy levels. Sun exposure and supplementation help."
+  },
+  {
+    "question": "why are my nails brittle?",
+    "answer": "Could be due to lack of protein, biotin, or iron. Keep nails moisturized and eat a balanced diet."
+  },
+  {
+    "question": "can i still get pregnant on birth control?",
+    "answer": "No method is 100% effective. If used correctly, birth control is highly reliable, but occasional failures can happen."
+  },
+  {
+    "question": "why is my period super heavy sometimes?",
+    "answer": "Heavy periods can be due to hormonal imbalance, fibroids, thyroid issues, or PCOS. See a doctor if it’s persistent."
+  },
+  {
+    "question": "how to reduce period cramps quickly?",
+    "answer": "Use a heating pad, gentle exercise, stay hydrated, and consider OTC painkillers if needed."
+  },
+  {
+    "question": "can too much caffeine affect periods?",
+    "answer": "Yes, high caffeine can worsen PMS symptoms and cause slight delays in your cycle."
+  },
+  {
+    "question": "i forget to take vitamins what now?",
+    "answer": "Try setting phone reminders or keeping them with your daily essentials. Don’t double the next dose."
+  },
+  {
+    "question": "how to know if my cycle is regular?",
+    "answer": "Track your periods for 3–6 months. A regular cycle is usually 21–35 days long with consistent flow length."
+  },
+  {
+    "question": "is it normal to have mood swings before period?",
+    "answer": "Yes, PMS causes hormonal changes affecting mood. Exercise, sleep, and stress management help."
+  },
+  {
+    "question": "can i do high intensity workouts on period?",
+    "answer": "Light to moderate exercise is generally fine. Listen to your body and avoid overexertion if bleeding is heavy."
+  },
+  {
+    "question": "whats the difference between spotting and period?",
+    "answer": "Spotting is light bleeding outside your period, often pink or brown. Period is heavier, red, and lasts several days."
+  },
+  {
+    "question": "how much iron do i need daily?",
+    "answer": "Women need around 18 mg daily. Requirements increase during pregnancy or heavy periods."
+  },
+  {
+    "question": "can dehydration cause cramps?",
+    "answer": "Yes, staying hydrated can reduce cramp intensity and improve overall comfort during periods."
+  },
+  {
+    "question": "i sleep too much why?",
+    "answer": "Could be due to stress, hormonal imbalances, anemia, thyroid issues, or poor sleep quality. Consult a doctor if persistent."
+  },
+  {
+    "question": "how to reduce bloating during periods?",
+    "answer": "Limit salty foods, drink water, include potassium-rich foods, and consider light exercise."
+  },
+  {
+    "question": "is chocolate bad for PMS?",
+    "answer": "No, moderate chocolate can boost mood. Dark chocolate also provides antioxidants."
+  },
+  {
+    "question": "can irregular periods affect fertility?",
+    "answer": "Yes, irregular cycles can make ovulation unpredictable, which may affect conception."
+  },
+  {
+    "question": "why do i get pimples before period?",
+    "answer": "Hormonal fluctuations increase oil production, leading to breakouts. Keep skin clean and consider zinc-rich foods."
+  },
+  {
+    "question": "how to improve hair growth naturally?",
+    "answer": "Eat protein, iron, omega-3s, and vitamins. Avoid excessive heat styling and manage stress."
+  },
+  {
+    "question": "is it normal to feel tired after exercise?",
+    "answer": "Yes, mild fatigue is normal. If extreme, check for anemia, low blood sugar, or overtraining."
+  },
+  {
+    "question": "can i drink alcohol on period?",
+    "answer": "Moderation is key. Alcohol may worsen bloating and PMS symptoms for some women."
+  },
+  {
+    "question": "how to manage anxiety daily?",
+    "answer": "Practice mindfulness, breathing exercises, regular workouts, and journaling. Seek professional help if needed."
+  },
+  {
+    "question": "what are good probiotics for women?",
+    "answer": "Yogurt, kefir, kimchi, and supplements with Lactobacillus strains support gut and vaginal health."
+  },
+  {
+    "question": "i get leg cramps at night why?",
+    "answer": "Low magnesium, dehydration, or prolonged sitting can cause leg cramps. Stretch and stay hydrated."
+  },
+  {
+    "question": "can i exercise after c-section?",
+    "answer": "Start with gentle walks and pelvic floor exercises. Get clearance from your doctor before resuming intense workouts."
+  },
+  {
+    "question": "how to reduce stress naturally?",
+    "answer": "Exercise, meditation, deep breathing, journaling, and spending time outdoors can help."
+  },
+  {
+    "question": "is it normal to have spotting between periods?",
+    "answer": "Occasional spotting can be normal, especially around ovulation or after birth control. Persistent spotting should be checked."
+  },
+  {
+    "question": "can thyroid affect my period?",
+    "answer": "Yes, both hyperthyroidism and hypothyroidism can cause irregular periods or heavy bleeding."
+  },
+  {
+    "question": "how to know if my discharge is normal?",
+    "answer": "Clear or white, odorless discharge is normal. Thick, yellow, green, or smelly discharge may indicate infection."
+  },
+  {
+    "question": "can i do yoga on period?",
+    "answer": "Yes, gentle yoga can reduce cramps and improve mood. Avoid inversions during heavy flow."
+  },
+  {
+    "question": "how to control sugar cravings?",
+    "answer": "Eat protein, fiber-rich foods, stay hydrated, and have small healthy snacks like fruits or nuts."
+  },
+  {
+    "question": "is it okay to miss a workout sometimes?",
+    "answer": "Absolutely! Rest and recovery are important. Consistency over time matters more than individual sessions."
+  },
+  {
+    "question": "can low iron cause hair loss?",
+    "answer": "Yes, iron deficiency can lead to hair thinning. Increase iron intake through diet or supplements if needed."
+  },
+  {
+    "question": "how to improve digestion fast?",
+    "answer": "Eat fiber-rich foods, hydrate, move after meals, and avoid excessive processed foods."
+  },
+  {
+    "question": "is it bad to eat spicy food on period?",
+    "answer": "Not inherently, but it may worsen bloating or cramps in some women. Monitor your body’s response."
+  },
+  {
+    "question": "why do i feel moody all the time?",
+    "answer": "Stress, hormonal changes, poor sleep, or underlying medical issues can affect mood. Track triggers and seek help if needed."
+  },
+  {
+    "question": "can overexercise affect hormones?",
+    "answer": "Yes, excessive exercise can lower estrogen, disrupt cycles, and affect bone health."
+  },
+  {
+    "question": "can i get pregnant while breastfeeding?",
+    "answer": "Yes, fertility can return even during breastfeeding. Use contraception if you wish to avoid pregnancy."
+  },
+  {
+    "question": "why am i bloated after meals?",
+    "answer": "Bloating can come from gas, high-sodium foods, or digestive issues. Eat slowly, hydrate, and consider probiotics."
+  },
+  {
+    "question": "how to track ovulation easily?",
+    "answer": "Use ovulation kits, track basal body temperature, or monitor cervical mucus changes to predict fertile days."
+  },
+  {
+    "question": "can anxiety cause irregular periods?",
+    "answer": "Yes, stress affects hormone levels, which can delay or alter your cycle."
+  },
+  {
+    "question": "is it safe to take ibuprofen during period?",
+    "answer": "Yes, for most women. It helps reduce cramps but follow recommended doses and check for stomach issues."
+  },
+  {
+    "question": "why is my discharge yellow sometimes?",
+    "answer": "Yellow discharge may indicate infection or normal variation. If accompanied by odor or discomfort, see a doctor."
+  },
+  {
+    "question": "how much water should i drink daily?",
+    "answer": "Aim for 2–3 liters daily, more if active or during hot weather."
+  },
+  {
+    "question": "can iron supplements upset stomach?",
+    "answer": "Yes, they can. Take with food or switch to a gentler form like iron bisglycinate if needed."
+  },
+  {
+    "question": "why do i get acne only on chin?",
+    "answer": "Hormonal fluctuations often cause chin and jawline breakouts. Track cycles and manage stress."
+  },
+  {
+    "question": "is it normal to feel tired during period?",
+    "answer": "Yes, blood loss and hormonal changes can cause fatigue. Rest and iron-rich foods help."
+  },
+  {
+    "question": "how to improve sleep naturally?",
+    "answer": "Maintain a sleep schedule, avoid screens before bed, meditate, and limit caffeine."
+  },
+  {
+    "question": "can low vitamin d affect mood?",
+    "answer": "Yes, low vitamin D is linked to fatigue and depression. Sunlight and supplements can help."
+  },
+  {
+    "question": "why do i crave sweets at night?",
+    "answer": "Low blood sugar, hormones, or habit can trigger cravings. Healthy snacks or protein help."
+  },
+  {
+    "question": "can skipping meals affect periods?",
+    "answer": "Yes, inconsistent eating can disrupt hormones and lead to irregular cycles."
+  },
+  {
+    "question": "how to reduce PMS bloating?",
+    "answer": "Limit salt, drink water, exercise lightly, and consider potassium-rich foods like bananas."
+  },
+  {
+    "question": "is it normal to have clots during period?",
+    "answer": "Small clots are normal, but large or frequent clots may indicate underlying issues. Consult a doctor."
+  },
+  {
+    "question": "can thyroid medication affect weight?",
+    "answer": "Yes, proper dosing can normalize weight, while under or over treatment may cause gain or loss."
+  },
+  {
+    "question": "how to manage hot flashes?",
+    "answer": "Stay hydrated, dress in layers, avoid triggers like spicy foods, and practice relaxation techniques."
+  },
+  {
+    "question": "can probiotics improve vaginal health?",
+    "answer": "Yes, certain Lactobacillus strains support healthy vaginal flora and prevent infections."
+  },
+  {
+    "question": "why do i feel dizzy after standing?",
+    "answer": "Could be low blood pressure, dehydration, or anemia. Stand slowly and hydrate well."
+  },
+  {
+    "question": "how to prevent hair loss during postpartum?",
+    "answer": "Eat a balanced diet, ensure adequate protein and iron, and avoid harsh styling."
+  },
+  {
+    "question": "can stress worsen acne?",
+    "answer": "Yes, stress increases cortisol, which can trigger oil production and breakouts."
+  },
+  {
+    "question": "why do i get cramps mid-cycle?",
+    "answer": "This may be ovulation pain, usually mild and temporary. Severe pain should be checked."
+  },
+  {
+    "question": "is it safe to exercise while pregnant?",
+    "answer": "Yes, with moderate intensity and doctor clearance. Avoid high-risk activities."
+  },
+  {
+    "question": "how to reduce sugar cravings during PMS?",
+    "answer": "Eat balanced meals with protein, healthy fats, and fiber to stabilize blood sugar."
+  },
+  {
+    "question": "why is my skin dry all the time?",
+    "answer": "Dehydration, harsh soaps, or hormonal changes can cause dryness. Moisturize and hydrate."
+  },
+  {
+    "question": "can caffeine delay period?",
+    "answer": "Excessive caffeine may slightly affect cycle timing in sensitive women."
+  },
+  {
+    "question": "how to increase milk supply while breastfeeding?",
+    "answer": "Feed frequently, stay hydrated, eat balanced meals, and consider lactation supplements if needed."
+  },
+  {
+    "question": "is it normal to have irregular heartbeats during stress?",
+    "answer": "Mild palpitations can occur during stress. Persistent issues should be checked by a doctor."
+  },
+  {
+    "question": "why do i get headaches before period?",
+    "answer": "Hormonal fluctuations, especially drop in estrogen, can trigger menstrual migraines."
+  },
+  {
+    "question": "how to naturally boost energy?",
+    "answer": "Regular sleep, balanced diet, light exercise, hydration, and stress management help."
+  },
+  {
+    "question": "can birth control cause weight gain?",
+    "answer": "Modern low-dose pills rarely cause significant weight gain. Temporary water retention may occur."
+  },
+  {
+    "question": "why do i feel bloated after salty foods?",
+    "answer": "Salt causes water retention. Drink water and balance sodium intake."
+  },
+  {
+    "question": "is it normal to have mood swings postpartum?",
+    "answer": "Yes, hormonal changes can cause mood swings. Support, rest, and counseling help."
+  },
+  {
+    "question": "can sleep deprivation affect hormones?",
+    "answer": "Yes, poor sleep disrupts cortisol, insulin, and reproductive hormones."
+  },
+  {
+    "question": "how to maintain healthy weight after pregnancy?",
+    "answer": "Balanced diet, gradual exercise, and adequate rest help achieve sustainable postpartum weight."
+  },
+  {
+    "question": "why do i get night sweats?",
+    "answer": "Hormonal fluctuations, stress, or infection can cause night sweats. Persistent issues need a checkup."
+  },
+  {
+    "question": "can I use essential oils for cramps?",
+    "answer": "Some oils like lavender or clary sage may relieve cramps via massage. Patch-test first."
+  },
+  {
+    "question": "how to prevent stretch marks?",
+    "answer": "Keep skin moisturized, maintain steady weight gain, and eat nutrient-rich foods."
+  },
+  {
+    "question": "why is my urine dark sometimes?",
+    "answer": "Could be dehydration, supplements, or foods. Drink water and consult a doctor if persistent."
+  },
+  {
+    "question": "can I eat chocolate while pregnant?",
+    "answer": "Moderate amounts are safe. Prefer dark chocolate for antioxidants."
+  },
+  {
+    "question": "how to cope with postpartum anxiety?",
+    "answer": "Talk to a professional, meditate, rest, and seek support from friends and family."
+  },
+  {
+    "question": "why do my nails break easily?",
+    "answer": "Could be due to low protein, iron, or excessive water exposure. Strengthen diet and use nail care."
+  },
+  {
+    "question": "is it okay to skip period sometimes with pills?",
+    "answer": "Yes, under medical supervision. Regular skipping without guidance isn’t recommended."
+  },
+  {
+    "question": "how to improve focus naturally?",
+    "answer": "Sleep well, stay hydrated, take short breaks, exercise, and eat brain-healthy foods."
+  },
+  {
+    "question": "can low calcium affect bones?",
+    "answer": "Yes, long-term deficiency increases risk of osteoporosis. Include dairy or supplements if needed."
+  },
+  {
+    "question": "why do i get hot flashes at night?",
+    "answer": "Hormonal changes, stress, or menopause can trigger night sweats. Keep bedroom cool and hydrate."
+  },
+  {
+    "question": "is it normal to feel weak after period?",
+    "answer": "Mild fatigue is common due to blood loss. Rest and iron-rich foods help recovery."
+  },
+  {
+    "question": "how to boost immunity naturally?",
+    "answer": "Eat a varied diet, exercise, sleep well, and manage stress."
+  },
+  {
+    "question": "can irregular periods indicate PCOS?",
+    "answer": "Yes, irregular cycles are a common PCOS symptom. Consult a doctor for testing."
+  },
+  {
+    "question": "why is my hair thinning suddenly?",
+    "answer": "Stress, hormones, thyroid issues, or nutrient deficiencies can cause sudden hair loss."
+  },
+  {
+    "question": "can meditation reduce PMS symptoms?",
+    "answer": "Yes, mindfulness and relaxation techniques can help reduce stress, cramps, and mood swings."
+  },
+  {
+    "question": "how to relieve constipation naturally?",
+    "answer": "Increase fiber intake, drink water, exercise, and consider probiotics."
+  },
+  {
+    "question": "why do i get cramps even after period?",
+    "answer": "Could be ovulation pain, gastrointestinal issues, or uterine conditions. Track symptoms and see a doctor if frequent."
+  },
+  {
+    "question": "can low vitamin b12 cause fatigue?",
+    "answer": "Yes, B12 deficiency can cause tiredness, weakness, and mood changes."
+  },
+  {
+    "question": "how to manage sugar intake?",
+    "answer": "Choose fruits, whole grains, limit sweets, and read labels for hidden sugars."
+  },
+  {
+    "question": "is it normal to have irregular appetite?",
+    "answer": "Yes, hormones, stress, and sleep can affect appetite. Persistent changes should be checked."
+  },
+  {
+    "question": "can low magnesium cause cramps?",
+    "answer": "Yes, magnesium helps muscle relaxation. Include nuts, seeds, and leafy greens."
+  },
+  {
+    "question": "how to maintain healthy skin?",
+    "answer": "Hydrate, use sunscreen, eat a balanced diet, and follow a gentle skincare routine."
+  },
+  {
+    "question": "why do i feel dizzy in morning?",
+    "answer": "Could be low blood sugar, dehydration, or anemia. Eat a small breakfast and hydrate."
+  },
+  {
+    "question": "can probiotics help digestion?",
+    "answer": "Yes, probiotics support gut health and can reduce bloating and irregularity."
+  },
+  {
+    "question": "how to prevent anemia naturally?",
+    "answer": "Eat iron-rich foods like spinach, legumes, eggs, and pair with vitamin C for absorption."
+  },
+  {
+    "question": "is it normal to get pimples after workouts?",
+    "answer": "Yes, sweat and bacteria can trigger breakouts. Shower and cleanse skin after exercise."
+  },
+  {
+    "question": "can meditation help postpartum recovery?",
+    "answer": "Yes, it reduces stress, improves mood, and supports mental well-being."
+  },
+  {
+    "question": "why do my hands feel cold often?",
+    "answer": "Could be poor circulation, anemia, or thyroid issues. Warm up hands and improve diet."
+  },
+  {
+    "question": "how to reduce sugar cravings postpartum?",
+    "answer": "Eat protein-rich meals, hydrate, and include healthy snacks like fruits and nuts."
+  },
+  {
+    "question": "can postpartum hair fall be prevented?",
+    "answer": "Not fully, but nutrition, gentle hair care, and stress management help reduce severity."
+  },
+  {
+    "question": "why is my mood low sometimes?",
+    "answer": "Hormonal changes, sleep deprivation, and stress can affect mood. Monitor triggers and seek support."
+  },
+  {
+    "question": "how to naturally boost iron levels?",
+    "answer": "Eat leafy greens, legumes, red meat, and pair with vitamin C for better absorption."
+  },
+  {
+    "question": "is it normal to feel bloated after childbirth?",
+    "answer": "Yes, hormonal shifts and fluid retention can cause bloating. Gentle exercise and hydration help."
+  },
+  {
+    "question": "how to track water intake?",
+    "answer": "Use apps, set reminders, or carry a water bottle to monitor daily consumption."
+  },
+  {
+    "question": "can low sleep affect fertility?",
+    "answer": "Yes, insufficient sleep can disrupt hormone balance and ovulation."
+  },
+  {
+    "question": "why do i get headaches postpartum?",
+    "answer": "Hormonal changes, dehydration, or tension can cause headaches. Rest, hydrate, and consult if severe."
   }
 ]
