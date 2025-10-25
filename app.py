@@ -13,6 +13,8 @@ import nltk
 from nltk.corpus import stopwords
 from rapidfuzz import fuzz
 import phonetics
+import torch
+from transformers import pipeline
 
 # -------------------------
 # CONFIG & CONSTANTS
@@ -31,14 +33,48 @@ EMERGENCY_KEYWORDS = ['chest pain', 'difficulty breathing', 'heavy bleeding', 's
 os.makedirs(SESSION_DATA_PATH, exist_ok=True)
 
 # -------------------------
-# FIXED ENCRYPTED SESSION MANAGEMENT
+# ROBUST FAQ LOADER
+# -------------------------
+class RobustFAQLoader:
+    @staticmethod
+    def load_faq_with_validation(file_path):
+        """Load FAQ with comprehensive error handling"""
+        print(f"📂 Loading FAQ from: {file_path}")
+        
+        if not os.path.exists(file_path):
+            print("❌ FAQ file not found!")
+            return []
+        
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+            
+            if not content:
+                print("❌ FAQ file is empty!")
+                return []
+            
+            # Try to parse as JSON
+            try:
+                data = json.loads(content)
+                print(f"✅ Successfully loaded {len(data)} FAQ entries")
+                return data
+            except json.JSONDecodeError as e:
+                print(f"❌ JSON parsing error: {e}")
+                return []
+                
+        except Exception as e:
+            print(f"❌ Error reading FAQ file: {e}")
+            return []
+
+# -------------------------
+# ENCRYPTED SESSION MANAGEMENT
 # -------------------------
 class EncryptedSessionManager:
     def __init__(self):
         self.sessions = {}
     
     def create_session(self, session_id):
-        """Create encrypted session - FIXED VERSION"""
+        """Create encrypted session"""
         session_key = self._hash_session_id(session_id)
         session_data = {
             'session_id': session_id,
@@ -53,20 +89,18 @@ class EncryptedSessionManager:
         return session_data
     
     def get_session(self, session_id):
-        """Get session with encryption - FIXED VERSION"""
+        """Get session with encryption"""
         session_key = self._hash_session_id(session_id)
         if session_key not in self.sessions:
             return self.create_session(session_id)
         
-        # Update last activity
         self.sessions[session_key]['last_activity'] = datetime.now().isoformat()
         return self.sessions[session_key]
     
     def update_session(self, session_id, user_input, bot_response, topics):
-        """Update session with new conversation - FIXED VERSION"""
+        """Update session with new conversation"""
         session = self.get_session(session_id)
         
-        # Add to conversation history
         session['conversation_history'].append({
             'timestamp': datetime.now().isoformat(),
             'user_input': user_input,
@@ -74,10 +108,8 @@ class EncryptedSessionManager:
             'topics': topics
         })
         
-        # Update discussed topics
         session['discussed_topics'].update(topics)
         
-        # Update encrypted data
         decrypted_data = self._decrypt_data(session['encrypted_data'])
         decrypted_data['history'].append({
             'timestamp': datetime.now().isoformat(),
@@ -88,10 +120,8 @@ class EncryptedSessionManager:
         session['encrypted_data'] = self._encrypt_data(decrypted_data)
     
     def get_conversation_context(self, session_id):
-        """Get conversation context from encrypted session - FIXED VERSION"""
+        """Get conversation context from encrypted session"""
         session = self.get_session(session_id)
-        
-        # Use regular conversation history for context (not encrypted)
         recent_history = list(session['conversation_history'])[-5:]
         
         return {
@@ -108,7 +138,6 @@ class EncryptedSessionManager:
         """Simple encryption for session data"""
         try:
             data_str = json.dumps(data)
-            # Simple XOR encryption for demo (use proper encryption in production)
             key = 0xAB
             encrypted = ''.join(chr(ord(c) ^ key) for c in data_str)
             return encrypted
@@ -251,7 +280,7 @@ class AdvancedNLPUnderstanding:
         phonetic_variations = []
         
         for word in words:
-            if len(word) > 3:  # Only for substantial words
+            if len(word) > 3:
                 try:
                     phonetic_variations.append(phonetics.metaphone(word))
                 except:
@@ -260,83 +289,185 @@ class AdvancedNLPUnderstanding:
         return phonetic_variations
 
 # -------------------------
-# EXPLAINABLE AI RESPONSE BUILDER
+# RAG KNOWLEDGE INTEGRATION
 # -------------------------
-class ExplainableAIResponseBuilder:
-    def __init__(self, nlp_understanding):
-        self.nlp = nlp_understanding
+class MedicalRAGKnowledgeBase:
+    def __init__(self):
+        # Initialize text generation for RAG (lightweight model)
+        try:
+            self.generator = pipeline(
+                'text2text-generation',
+                model='google/flan-t5-small',  # Using smaller model for faster loading
+                device=-1  # Use CPU to avoid GPU memory issues
+            )
+            print("✅ RAG Text Generation initialized")
+        except Exception as e:
+            print(f"⚠️ RAG Generator unavailable: {e}")
+            self.generator = None
     
-    def build_explained_response(self, user_query, faq_match, conversation_context):
-        """Build response with explanation in own words"""
+    def get_rag_enhanced_answer(self, user_query, faq_context, conversation_context):
+        """Enhance FAQ answers with RAG knowledge"""
+        if not self.generator:
+            return faq_context['answer']
+        
+        try:
+            prompt = self._create_rag_prompt(user_query, faq_context, conversation_context)
+            
+            generated_response = self.generator(
+                prompt,
+                max_length=250,
+                do_sample=True,
+                temperature=0.6,
+                num_return_sequences=1
+            )[0]['generated_text']
+            
+            validated_response = self._validate_rag_response(generated_response, faq_context)
+            return validated_response
+            
+        except Exception as e:
+            print(f"⚠️ RAG generation failed: {e}")
+            return faq_context['answer']
+    
+    def _create_rag_prompt(self, user_query, faq_context, conversation_context):
+        """Create intelligent prompt for RAG enhancement"""
+        
+        context_str = ""
+        if conversation_context and conversation_context.get('recent_history'):
+            recent = conversation_context['recent_history'][-2:]
+            if recent:
+                context_str = "Recent conversation:\n"
+                for exchange in recent:
+                    context_str += f"User: {exchange.get('user_input', '')}\n"
+                    context_str += f"Assistant: {exchange.get('bot_response', '')}\n"
+        
+        prompt = f"""
+        As a women's health assistant, enhance this answer to be clearer and more helpful.
+        
+        Question: "{user_query}"
+        
+        {context_str}
+        
+        Base Answer: "{faq_context['answer']}"
+        
+        Make this explanation more conversational and supportive while keeping facts accurate.
+        
+        Enhanced version:
+        """
+        
+        return prompt
+    
+    def _validate_rag_response(self, rag_response, faq_context):
+        """Validate RAG response for safety and accuracy"""
+        unsafe_phrases = [
+            'prescribe', 'diagnose', 'you must', 'definitely', 'certainly',
+            'medical advice', 'you should take', 'I recommend you'
+        ]
+        
+        rag_lower = rag_response.lower()
+        if any(phrase in rag_lower for phrase in unsafe_phrases):
+            return faq_context['answer']
+        
+        if len(rag_response.strip()) < 20:
+            return faq_context['answer']
+        
+        if 'consult' not in rag_lower and 'doctor' not in rag_lower:
+            rag_response += " Consult healthcare professionals for personal advice."
+        
+        return rag_response
+
+# -------------------------
+# RAG-ENHANCED RESPONSE BUILDER
+# -------------------------
+class RAGEnhancedResponseBuilder:
+    def __init__(self, nlp_understanding, rag_system):
+        self.nlp = nlp_understanding
+        self.rag_system = rag_system
+    
+    def build_rag_enhanced_response(self, user_query, faq_match, conversation_context):
+        """Build response enhanced with RAG knowledge"""
         query_analysis = self.nlp.analyze_query(user_query)
         
-        # Base answer from FAQ
+        should_use_rag = self._should_use_rag(user_query, faq_match, query_analysis)
+        
+        if should_use_rag and self.rag_system.generator:
+            rag_response = self.rag_system.get_rag_enhanced_answer(
+                user_query, faq_match, conversation_context
+            )
+            final_response = self._add_explainability(rag_response, query_analysis)
+        else:
+            final_response = self._build_standard_explained_response(
+                user_query, faq_match, conversation_context
+            )
+        
+        tone_adjusted = self._adjust_tone(final_response, query_analysis['tone'])
+        return tone_adjusted
+    
+    def _should_use_rag(self, user_query, faq_match, query_analysis):
+        """Determine if RAG enhancement should be used"""
+        conditions = [
+            query_analysis['vocabulary_complexity']['reading_level'] == 'advanced',
+            faq_match['final_score'] < 0.7,
+            any(intent in query_analysis['semantic_intent'] for intent in ['definition', 'explanation']),
+            'latest' in user_query.lower() or 'recent' in user_query.lower(),
+            len(user_query.split()) > 8
+        ]
+        
+        return any(conditions)
+    
+    def _build_standard_explained_response(self, user_query, faq_match, conversation_context):
+        """Build standard explained response (without RAG)"""
         base_answer = faq_match['answer']
-        
-        # Explain in own words
-        explained_answer = self._explain_in_own_words(base_answer, query_analysis)
-        
-        # Adjust tone based on analysis
-        tone_adjusted = self._adjust_tone(explained_answer, query_analysis['tone'])
-        
-        # Add context if available
-        contextualized = self._add_conversation_context(tone_adjusted, conversation_context)
-        
+        explained_answer = self._explain_in_own_words(base_answer, user_query)
+        contextualized = self._add_conversation_context(explained_answer, conversation_context)
         return contextualized
     
-    def _explain_in_own_words(self, base_answer, query_analysis):
+    def _explain_in_own_words(self, base_answer, user_query):
         """Explain FAQ answer in natural language"""
-        # Simple explanation transformation
-        explanations = {
-            'definition': f"Let me explain this in simple terms: ",
-            'symptoms': f"Here are the key things to look out for: ",
-            'treatment': f"Based on medical knowledge, here are the main approaches: ",
-            'method': f"Here's how this typically works: ",
-            'causation': f"The main reasons behind this are: "
-        }
-        
-        # Choose appropriate explanation prefix
-        intent = query_analysis['semantic_intent'][0] if query_analysis['semantic_intent'] else 'general_inquiry'
-        prefix = explanations.get(intent, "Here's what I can tell you: ")
-        
-        # Simplify and explain
-        simplified = self._simplify_medical_language(base_answer)
-        
-        return prefix + simplified
+        if user_query.lower().startswith('what is'):
+            return f"Let me explain this clearly: {base_answer}"
+        elif user_query.lower().startswith('how to'):
+            return f"Here's how you can approach this: {base_answer}"
+        elif 'symptom' in user_query.lower():
+            return f"Here are the key signs to watch for: {base_answer}"
+        else:
+            return f"Based on medical information: {base_answer}"
     
-    def _simplify_medical_language(self, text):
-        """Simplify medical jargon"""
-        simplifications = {
-            'may improve': 'can help with',
-            'evidence-based': 'scientifically proven',
-            'complementary approach': 'additional method',
-            'menstrual regulation': 'period regularity',
-            'symptoms': 'signs and experiences',
-            'definitive': 'clear and certain',
-            'clinician': 'doctor or healthcare provider'
-        }
+    def _add_explainability(self, response, query_analysis):
+        """Add explainability layer to RAG response"""
+        if query_analysis['semantic_intent'] and query_analysis['semantic_intent'][0] == 'definition':
+            return f"Let me break this down for you: {response}"
+        elif query_analysis['tone'] == 'confused':
+            return f"Let me clarify this simply: {response}"
         
-        simplified = text
-        for complex_term, simple_term in simplifications.items():
-            simplified = simplified.replace(complex_term, simple_term)
+        return response
+    
+    def _add_conversation_context(self, response, conversation_context):
+        """Add conversation context to response"""
+        if not conversation_context or not conversation_context.get('discussed_topics'):
+            return response
         
-        return simplified
+        recent_topics = conversation_context.get('discussed_topics', [])
+        if recent_topics and len(recent_topics) > 1:
+            topics_str = ', '.join(list(recent_topics)[-2:])
+            return f"Building on our discussion about {topics_str}, {response.lower()}"
+        
+        return response
     
     def _adjust_tone(self, response, tone):
         """Adjust response tone based on user's emotional state"""
         tone_prefixes = {
-            'anxious': "I understand this might be worrying. ",
+            'anxious': "I understand this might be concerning. ",
             'urgent': "This sounds important. ",
-            'confused': "Let me clarify this for you. ",
-            'grateful': "I'm glad I can help! ",
+            'confused': "Let me explain this clearly. ",
+            'grateful': "I'm glad to help! ",
             'neutral': ""
         }
         
         tone_suffixes = {
-            'anxious': " Remember, many women successfully manage these concerns with proper care.",
-            'urgent': " If this is an emergency, please seek immediate medical attention.",
-            'confused': " Does this help make things clearer?",
-            'grateful': " Feel free to ask more questions!",
+            'anxious': " Many women find this information helpful in managing their health concerns.",
+            'urgent': " If symptoms are severe, please seek medical attention promptly.",
+            'confused': " I hope this explanation makes things clearer for you.",
+            'grateful': " Feel free to ask any follow-up questions!",
             'neutral': ""
         }
         
@@ -344,41 +475,27 @@ class ExplainableAIResponseBuilder:
         suffix = tone_suffixes.get(tone, "")
         
         return prefix + response + suffix
-    
-    def _add_conversation_context(self, response, conversation_context):
-        """Add conversation context to response"""
-        if not conversation_context or not conversation_context.get('recent_history'):
-            return response
-        
-        recent_topics = conversation_context.get('discussed_topics', [])
-        if recent_topics and len(recent_topics) > 1:
-            # Reference previous discussion
-            topics_str = ', '.join(list(recent_topics)[-2:])
-            return f"Continuing our discussion about {topics_str}, {response.lower()}"
-        
-        return response
 
 # -------------------------
-# SCALABLE FAQ SEARCH ENGINE
+# HYBRID SEARCH WITH RAG
 # -------------------------
-class ScalableFAQSearcher:
-    def __init__(self, faq_data):
+class HybridSearchWithRAG:
+    def __init__(self, faq_data, rag_system):
         self.faq_data = faq_data
         self.faq_questions = [faq['question'] for faq in faq_data]
         self.nlp = AdvancedNLPUnderstanding()
+        self.rag_system = rag_system
         
-        # Initialize vector search for scalability
         self.embed_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.index = None
         self._setup_vector_index()
     
     def _setup_vector_index(self):
-        """Setup FAISS index for 10k+ FAQs"""
+        """Setup FAISS index"""
         try:
-            print("🔄 Setting up scalable vector index...")
+            print("🔄 Setting up vector index for RAG-enhanced search...")
             self.faq_embeddings = self.embed_model.encode(self.faq_questions, convert_to_numpy=True)
             
-            # Normalize for cosine similarity
             norms = np.linalg.norm(self.faq_embeddings, axis=1, keepdims=True)
             norms[norms == 0] = 1.0
             faq_embeddings_norm = self.faq_embeddings / norms
@@ -387,34 +504,42 @@ class ScalableFAQSearcher:
             self.index = faiss.IndexFlatIP(dimension)
             self.index.add(faq_embeddings_norm.astype('float32'))
             
-            print(f"✅ Vector index ready for {len(self.faq_data)} FAQs")
+            print(f"✅ RAG-ready vector index for {len(self.faq_data)} FAQs")
         except Exception as e:
             print(f"⚠️ Vector index setup failed: {e}")
             self.index = None
     
-    def comprehensive_search(self, user_query):
-        """Comprehensive search with multiple strategies"""
+    def comprehensive_rag_search(self, user_query):
+        """Comprehensive search with RAG readiness"""
         query_analysis = self.nlp.analyze_query(user_query)
         all_matches = []
         
-        # 1. Vector semantic search
-        vector_matches = self._vector_search(user_query)
-        all_matches.extend(vector_matches)
+        all_matches.extend(self._vector_search(user_query))
+        all_matches.extend(self._phonetic_search(user_query, query_analysis))
+        all_matches.extend(self._keyword_search(user_query))
+        all_matches.extend(self._topic_search(query_analysis['medical_context']))
         
-        # 2. Phonetic search
-        phonetic_matches = self._phonetic_search(user_query, query_analysis)
-        all_matches.extend(phonetic_matches)
+        ranked_matches = self._rank_matches(all_matches, query_analysis)
         
-        # 3. Keyword search
-        keyword_matches = self._keyword_search(user_query)
-        all_matches.extend(keyword_matches)
+        for match in ranked_matches:
+            match['rag_confidence'] = self._calculate_rag_confidence(match, query_analysis)
         
-        # 4. Topic-based search
-        topic_matches = self._topic_search(query_analysis['medical_context'])
-        all_matches.extend(topic_matches)
+        return ranked_matches
+    
+    def _calculate_rag_confidence(self, match, query_analysis):
+        """Calculate confidence score for RAG enhancement"""
+        score = 0.0
         
-        # Rank and return best matches
-        return self._rank_matches(all_matches, query_analysis)
+        if query_analysis['vocabulary_complexity']['reading_level'] == 'advanced':
+            score += 0.3
+        
+        if any(intent in query_analysis['semantic_intent'] for intent in ['definition', 'causation']):
+            score += 0.3
+        
+        if match['final_score'] < 0.7:
+            score += 0.2
+        
+        return min(score, 1.0)
     
     def _vector_search(self, query, top_k=10):
         """Vector similarity search"""
@@ -472,9 +597,7 @@ class ScalableFAQSearcher:
         
         for idx, faq in enumerate(self.faq_data):
             question_lower = faq['question'].lower()
-            answer_lower = faq['answer'].lower()
             
-            # Check both question and answer
             if (query_lower in question_lower or 
                 any(word in question_lower for word in query_lower.split())):
                 matches.append({
@@ -517,18 +640,15 @@ class ScalableFAQSearcher:
         for match in matches:
             final_score = match['score']
             
-            # Boost semantic matches
             if match['type'] == 'semantic':
                 final_score *= 1.2
             
-            # Boost by intent match
             if any(intent in match['question'].lower() for intent in query_analysis['semantic_intent']):
                 final_score *= 1.1
             
             match['final_score'] = min(final_score, 1.0)
             scored_matches.append(match)
         
-        # Remove duplicates and sort
         unique_matches = {}
         for match in scored_matches:
             key = match['question']
@@ -569,63 +689,31 @@ class TimeBasedGreeting:
         return f"{base_message} How can I help you today? 😊"
 
 # -------------------------
-# ROBUST FAQ LOADER
+# RAG-ENHANCED MAIN CHATBOT
 # -------------------------
-class RobustFAQLoader:
-    @staticmethod
-    def load_faq_with_validation(file_path):
-        """Load FAQ with comprehensive error handling"""
-        print(f"📂 Loading FAQ from: {file_path}")
-        
-        if not os.path.exists(file_path):
-            print("❌ FAQ file not found!")
-            return []
-        
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read().strip()
-            
-            if not content:
-                print("❌ FAQ file is empty!")
-                return []
-            
-            # Try to parse as JSON
-            try:
-                data = json.loads(content)
-                print(f"✅ Successfully loaded {len(data)} FAQ entries")
-                return data
-            except json.JSONDecodeError as e:
-                print(f"❌ JSON parsing error: {e}")
-                return []
-                
-        except Exception as e:
-            print(f"❌ Error reading FAQ file: {e}")
-            return []
-
-# -------------------------
-# MAIN ENHANCED CHATBOT
-# -------------------------
-class EnhancedMEBot:
+class RAGEnhancedMEBot:
     def __init__(self):
-        print("🚀 Initializing Enhanced ME Bot...")
+        print("🚀 Initializing RAG-Enhanced ME Bot...")
         
         # Load FAQ data
         self.faq_data = RobustFAQLoader.load_faq_with_validation(FAQ_PATH)
         
-        # Initialize all systems
+        # Initialize RAG system first
+        self.rag_system = MedicalRAGKnowledgeBase()
+        
+        # Initialize other systems with RAG integration
         self.session_manager = EncryptedSessionManager()
         self.nlp_understanding = AdvancedNLPUnderstanding()
-        self.faq_searcher = ScalableFAQSearcher(self.faq_data)
-        self.response_builder = ExplainableAIResponseBuilder(self.nlp_understanding)
+        self.search_engine = HybridSearchWithRAG(self.faq_data, self.rag_system)
+        self.response_builder = RAGEnhancedResponseBuilder(self.nlp_understanding, self.rag_system)
         
-        print("✅ All systems initialized")
-        print("🔐 Encrypted session management ready")
-        print("🧠 Advanced NLP understanding active")
-        print("🎯 Explainable AI responses enabled")
-        print("📊 Scalable to 10k+ FAQs")
+        print("✅ RAG-Enhanced systems initialized")
+        print("🧠 Medical RAG knowledge base ready")
+        print("🔍 Hybrid search with RAG scoring active")
+        print("💬 Intelligent response generation enabled")
     
     def process_query(self, user_input, session_id):
-        """Process user query with all enhanced features"""
+        """Process user query with RAG enhancement"""
         # Emergency detection
         if any(emergency in user_input.lower() for emergency in EMERGENCY_KEYWORDS):
             return f"🚨 EMERGENCY: {MEDICAL_DISCLAIMER} Please seek immediate medical attention!"
@@ -633,17 +721,17 @@ class EnhancedMEBot:
         # Get session context
         session_context = self.session_manager.get_conversation_context(session_id)
         
-        # Comprehensive search
-        matches = self.faq_searcher.comprehensive_search(user_input)
+        # Comprehensive RAG-ready search
+        matches = self.search_engine.comprehensive_rag_search(user_input)
         
         if not matches:
-            return self._build_fallback_response(user_input, session_context)
+            return self._build_rag_fallback_response(user_input, session_context)
         
         # Get best match
         best_match = matches[0]
         
-        # Build explained response
-        response = self.response_builder.build_explained_response(
+        # Build RAG-enhanced response
+        response = self.response_builder.build_rag_enhanced_response(
             user_input, best_match, session_context
         )
         
@@ -657,46 +745,57 @@ class EnhancedMEBot:
         
         return response
     
-    def _build_fallback_response(self, user_input, session_context):
-        """Build fallback response when no matches found"""
-        query_analysis = self.nlp_understanding.analyze_query(user_input)
+    def _build_rag_fallback_response(self, user_input, session_context):
+        """Build fallback response with RAG knowledge"""
+        if self.rag_system.generator:
+            try:
+                simple_context = {
+                    'question': user_input,
+                    'answer': "I don't have specific information about this in my knowledge base.",
+                    'topics': self.nlp_understanding.analyze_query(user_input)['medical_context']
+                }
+                
+                rag_response = self.rag_system.get_rag_enhanced_answer(
+                    user_input, simple_context, session_context
+                )
+                return f"While I don't have specific FAQ information, here's what I can share: {rag_response}"
+            except:
+                pass
         
         if session_context and session_context.get('discussed_topics'):
             topics = list(session_context['discussed_topics'])[-2:]
             return f"I specialize in women's health topics like {', '.join(topics)}. Could you ask something specific about these areas?"
         
-        return "I focus on women's health including PCOD/PCOS, menstrual health, hormones, and lifestyle. Please ask about these specific topics for detailed information."
+        return "I focus on women's health including PCOD/PCOS, menstrual health, and hormonal balance. Please ask about these specific topics."
 
 # -------------------------
-# ENHANCED CLI INTERFACE
+# ENHANCED CLI WITH RAG
 # -------------------------
-def run_enhanced_cli():
-    bot = EnhancedMEBot()
+def run_rag_enhanced_cli():
+    bot = RAGEnhancedMEBot()
     
-    print(f"\n{BOT_NAME} Enhanced")
+    print(f"\n{BOT_NAME} RAG-Enhanced")
     print("=" * 60)
-    print("✨ Contextual Memory & Session Management")
-    print("✨ Tone Adjustment & Emotional Intelligence")
-    print("✨ Explainable AI (Answers in Own Words)")
-    print("✨ Encrypted & Private Conversations")
-    print("✨ Scalable to 10k+ FAQs")
-    print("✨ Phonetic & Semantic Understanding")
-    print("✨ Time-based Personalization")
+    print("✨ Retrieval-Augmented Generation (RAG)")
+    print("✨ FAQ Knowledge + External Medical Insights")
+    print("✨ Intelligent Response Generation")
+    print("✨ Context-Aware Conversations")
+    print("✨ Enhanced Explainability")
+    print("✨ Medical Safety & Accuracy")
     print("=" * 60)
     
     session_id = str(uuid.uuid4())[:8]
     print(f"Session ID: {session_id} (Encrypted)")
     
-    # Get initial context for personalized greeting
+    # Get initial context
     try:
         initial_context = bot.session_manager.get_conversation_context(session_id)
         welcome_message = TimeBasedGreeting.get_welcome_message(initial_context)
     except Exception as e:
-        print(f"⚠️ Session initialization issue: {e}")
         welcome_message = TimeBasedGreeting.get_welcome_message()
     
     print(f"\n{welcome_message}")
-    print("I'll explain everything in clear, simple terms and remember our conversation.")
+    print("I'll provide comprehensive answers using both my knowledge base and medical insights.")
     print("Type 'bye' to exit")
     print("=" * 60)
     
@@ -707,16 +806,15 @@ def run_enhanced_cli():
                 continue
                 
             if user_input.lower() in ['exit', 'quit', 'bye']:
-                # Get final context for personalized goodbye
                 try:
                     final_context = bot.session_manager.get_conversation_context(session_id)
                     duration = final_context.get('session_duration', 0)
                     topics = final_context.get('discussed_topics', [])
                     
-                    goodbye_msg = f"Goodbye! We spoke for {duration} minutes about {len(topics)} topics. Take care! 💖"
+                    goodbye_msg = f"Goodbye! We discussed {len(topics)} health topics. Take care! 💖"
                     print(f"{BOT_NAME}: {goodbye_msg}")
                 except:
-                    print(f"{BOT_NAME}: Goodbye! Take care! 💖")
+                    print(f"{BOT_NAME}: Goodbye! Stay healthy! 💖")
                 break
             
             start_time = time.time()
@@ -724,14 +822,14 @@ def run_enhanced_cli():
             end_time = time.time()
             
             print(f"{BOT_NAME}: {response}")
-            print(f"[Processed in {end_time-start_time:.2f}s]")
+            print(f"[RAG-Enhanced in {end_time-start_time:.2f}s]")
             print("-" * 60)
             
         except KeyboardInterrupt:
-            print(f"\n{BOT_NAME}: Session encrypted and saved. Stay healthy! 💪")
+            print(f"\n{BOT_NAME}: RAG session saved. Stay healthy! 💪")
             break
         except Exception as e:
-            print(f"{BOT_NAME}: I'm here and ready to help! Please try your question again.")
+            print(f"{BOT_NAME}: I'm ready to help! Please try your question again.")
 
 if __name__ == '__main__':
-    run_enhanced_cli()
+    run_rag_enhanced_cli()
